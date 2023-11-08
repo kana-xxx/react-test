@@ -1,0 +1,148 @@
+@charset "utf-8";
+body {
+    color:#35383E;
+    font-size: 1.07rem;
+    letter-spacing: 0.05em;
+}
+*, *::before, *::after {
+    box-sizing:border-box;
+  }
+  .clearfix::after {
+    content:'';
+    display:block;
+    clear:both;
+  }
+h2,h3,h4 {
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+img {
+    width: 100%;
+  }
+p {
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper {
+    margin-top: 10.6rem;
+    padding: 0 17rem ;
+}
+.outer-second {
+        background: #FAFAFA;
+}
+.wrapper-second {
+    padding: 5.9rem 17rem 8.2rem;
+}
+.gray-wrap {
+    background: #FAFAFA;
+    padding: 8.75rem 17rem;
+    margin-top: 10.6rem;
+    
+}
+.headlign {
+    padding-bottom: 2.3rem;
+    text-align: center;
+}
+.content-ttl {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.content-subttl {
+    color: #00A5E3;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.headlign-txt {
+    margin-top: 2.3rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.headlign-txt-second {
+    margin-top: 3.1rem;
+}
+@media all and (max-width : 1024px)  {
+    body {
+        font-size: 1rem;
+    }
+    .wrapper {
+        margin-top: 6.3rem;
+        padding: 0 2.5rem;
+    }
+    .gray-wrap {
+        padding: 5rem 2.5rem;
+        margin-top: 6.3rem;
+        
+    }
+    .wrapper-second {
+        padding: 3.75rem 3.75rem 4.4rem;
+    }
+
+    .headlign {
+        padding-bottom: 2.3rem;
+        text-align: center;
+    }
+    .content-ttl {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    .content-subttl {
+        color: #00A5E3;
+        font-size: .7rem;
+        line-height: 1.7;
+    }
+    .headlign-txt {
+        margin-top: 1.55rem;
+        font-size: .9rem;
+        line-height: 1.4;
+    }
+    .headlign-txt-second {
+        margin-top: 3.1rem;
+    }
+}
+
+@media all and (max-width : 599px)  {
+    body {
+        font-size: 1rem;
+    }
+    .wrapper {
+        margin-top: 3.75rem;
+        padding: 0 1.8rem;
+    }
+    .gray-wrap {
+        padding: 3.1rem 1.8rem;
+        margin-top: 3.75rem;
+        
+    }
+    .wrapper-second {
+        padding: 3.5rem 1.8rem 3.75rem;
+    }
+
+    .headlign {
+        padding-bottom: 2.3rem;
+        text-align: center;
+    }
+    .content-ttl {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    .content-subttl {
+        color: #00A5E3;
+        font-size: .5rem;
+        line-height: 1.7;
+    }
+    .headlign-txt {
+        margin-top: 1rem;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    .headlign-txt-second {
+        margin-top: 1.25rem;
+    }
+}
