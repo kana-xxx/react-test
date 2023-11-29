@@ -64,6 +64,12 @@ p {
 
 .headlign-txt-second {
     margin-top: 3.1rem;
+    text-align: left;
+    display: inline-block;
+    margin: 3.1rem auto 0;
+}
+.headlign-txt-second.medium {
+    font-size: 1.6rem;
 }
 @media all and (max-width : 1024px)  {
     body {
@@ -103,6 +109,10 @@ p {
     }
     .headlign-txt-second {
         margin-top: 3.1rem;
+        text-align: center;
+    }
+    .headlign-txt-second.medium {
+        font-size: 1.1rem;
     }
 }
 
@@ -144,5 +154,6 @@ p {
     }
     .headlign-txt-second {
         margin-top: 1.25rem;
+        text-align: center;
     }
 }
