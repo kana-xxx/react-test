@@ -8,8 +8,9 @@
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/top.css">
-       <!-- Noto Sans CJK JPフォントの読み込み -->
-   <script>
+    <link rel="next" href="#">
+<!-- Noto Sans CJK JPフォントの読み込み -->
+<script>
     (function(d) {
       var config = {
         kitId: 'rvq3qba',
@@ -22,7 +23,29 @@
 </head>
 <body>
     <header></header>
-    <main></main>
+    <main>
+      <!-- パンくずリスト -->
+      <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="#"><span itemprop="name">トップ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item">
+                <span itemprop="name">導入事例</span>
+            </a>
+            <meta itemprop="position" content="2" />
+        </li>   
+    </ul>
+    <!-- ページネーション -->
+<div class="page-nation">
+  <span class="page-numbers"><</span>
+      <a class="page-numbers" href="#">1</a>
+      <a class="page-numbers" href="#">2</a>
+      <a class="page-numbers" href="#">3</a>
+  <span class="page-numbers" ><a href="#">></span>
+    </main>
     <footer></footer>
     
     <script src="./js/slide-logo.js"></script>
