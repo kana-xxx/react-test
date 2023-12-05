@@ -166,7 +166,7 @@ a{
     }
     .content-subttl {
         color: #00A5E3;
-        font-size: .7rem;
+        font-size: 1rem;
         line-height: 1.7;
     }
     .content-second-ttl {
@@ -176,12 +176,12 @@ a{
     }
     .content-second-subttl {
         color: #00A5E3;
-        font-size: .875rem;
+        font-size: 1rem;
         line-height: 1.7;
     }
     .headlign-txt {
         margin-top: 1.55rem;
-        font-size: .9rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
     .headlign-txt-second {
@@ -259,12 +259,12 @@ a{
         font-size: 0.7rem;
     }
     .page-nation{
-        column-gap: 0.4rem;
+        column-gap: 0.8rem;
     }
     .page-numbers{
-        width: 3rem;
-        height: 3rem;
-        font-size: 1.25rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1rem;
     }
 }
 @media (min-width: 1200px) and (max-width: 1600px)  {
@@ -284,7 +284,6 @@ a{
     content: '>';
     margin: 0.4rem;
 }
-
 .breadcrumbs li a:hover {
     opacity:0.5
 }
@@ -292,10 +291,11 @@ a{
     opacity:1;
 }
 .page-nation {
-    column-gap: 0.5rem;
+    column-gap: 1rem;
 }
 .page-numbers {
-    width: 3.35rem;
-    height: 3.35rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
 }
 }
