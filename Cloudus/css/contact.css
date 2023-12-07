@@ -15,7 +15,7 @@
     }
 }
 
-@media screen and (max-width: 480px)  {
+@media all and (max-width : 599px)  {
     .tab-br {
         display: none;
     }
@@ -40,7 +40,7 @@
   .Form-Item:first-child {
     margin-top: 0;
   }
-  @media screen and (max-width: 480px) {
+  @media all and (max-width : 599px)  {
     .Form {
       margin-top: 1rem;
     }
@@ -74,7 +74,7 @@
     font-size: .9rem;
     }
   }
-  @media screen and (max-width: 480px) {
+  @media all and (max-width : 599px)  {
     .Form-Item-Label {
       max-width: inherit;
       display: flex;
@@ -86,7 +86,7 @@
     margin-top: 8px;
     margin-bottom: auto;
   }
-  @media screen and (max-width: 480px) {
+  @media all and (max-width : 599px)  {
     .Form-Item-Label.isMsg {
       margin-top: 0;
     }
@@ -127,7 +127,7 @@
       }
 
   }
-  @media screen and (max-width: 480px) {
+  @media all and (max-width : 599px)  {
     .Form-Item-Label-Required {
         margin-left: 15px;
         padding-top: 6px;
@@ -165,7 +165,7 @@
   }
 }
 
-  @media screen and (max-width: 480px) {
+@media all and (max-width : 599px)  {
     .Form-Item-Input {
       margin-left: 0;
       margin-top: .9rem;
@@ -191,7 +191,7 @@
       margin-top: .6em;
     }
   }
-  @media screen and (max-width: 480px) {
+  @media all and (max-width : 599px)  {
     .Form-Item-Textarea {
       margin-top: 18px;
       margin-left: 0;
@@ -216,7 +216,7 @@
     font-weight: bold;
     font-size: 20px;
   }
-  @media screen and (max-width: 480px) {
+  @media all and (max-width : 599px)  {
     .Form-Btn {
       margin-top: 24px;
       padding-top: 8px;
@@ -327,7 +327,7 @@
         max-width: 7.5rem;
     }
 }
-@media screen and (max-width: 480px) {
+@media all and (max-width : 599px)  {
     .thanksTxt {
         text-align: left;
         line-height: 1.3;
