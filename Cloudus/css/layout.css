@@ -176,7 +176,7 @@ a{
     }
     .content-second-subttl {
         color: #00A5E3;
-        font-size: 1rem;
+        font-size: .9rem;
         line-height: 1.7;
     }
     .headlign-txt {
@@ -267,7 +267,7 @@ a{
         font-size: 1rem;
     }
 }
-@media (min-width: 1200px) and (max-width: 1600px)  {
+@media (min-width: 1025px) and (max-width: 1600px)  {
 .wrapper-second {
     padding: 2rem 13rem 4rem;
 }
