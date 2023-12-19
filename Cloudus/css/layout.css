@@ -76,6 +76,21 @@ a{
 
 .headlign-txt-second {
     margin-top: 3.1rem;
+    text-align: left;
+    display: inline-block;
+    margin: 3.1rem auto 0;
+}
+.headlign-txt-second.medium {
+    font-size: 1.4rem;
+}
+
+.headlign-txt-second.medium.bold {
+    font-weight: bold;
+}
+@media all and (max-width : 1500px)  {
+.headlign-txt-second.medium {
+    font-size: 1.28rem;
+}
 }
 /* ページネーション */
 .page-nation {
@@ -187,22 +202,6 @@ a{
     .headlign-txt-second {
         margin-top: 3.1rem;
     }
-    .breadcrumbs {
-        margin: 0 3rem;
-        padding: 1.5rem 0;
-        font-size: 0.6rem;
-    }
-    .breadcrumbs :not(:first-child)::before {
-        margin: 0.313rem;
-    }
-    .page-nation{
-        column-gap: 0.5rem;
-    }
-    .page-numbers{
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1.2rem;
-    }
 }
 
 @media all and (max-width : 599px)  {
@@ -234,16 +233,6 @@ a{
     .content-subttl {
         color: #00A5E3;
         font-size: .5rem;
-        line-height: 1.7;
-    }
-    .content-second-ttl {
-        font-size: 1.4rem;
-        line-height: 1.5;
-        font-weight: bold;
-    }
-    .content-second-subttl {
-        color: #00A5E3;
-        font-size: 1rem;
         line-height: 1.7;
     }
     .headlign-txt {
