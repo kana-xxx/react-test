@@ -6,12 +6,12 @@ body {
 }
 *, *::before, *::after {
     box-sizing:border-box;
-  }
-  .clearfix::after {
+}
+.clearfix::after {
     content:'';
     display:block;
     clear:both;
-  }
+}
 h2,h3,h4 {
     font-family: "noto-sans-cjk-jp", sans-serif;
     font-weight: 700;
@@ -19,13 +19,15 @@ h2,h3,h4 {
 }
 img {
     width: 100%;
-  }
+}
 p {
     font-family: "noto-sans-cjk-jp", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-
+a{
+    font-family: "noto-sans-cjk-jp", sans-serif; ;
+}
 .wrapper {
     margin-top: 10.6rem;
     padding: 0 17rem ;
@@ -34,7 +36,7 @@ p {
         background: #FAFAFA;
 }
 .wrapper-second {
-    padding: 5.9rem 17rem 8.2rem;
+    padding: 2rem 17rem 4rem;
 }
 .gray-wrap {
     background: #FAFAFA;
@@ -52,6 +54,16 @@ p {
     font-weight: bold;
 }
 .content-subttl {
+    color: #00A5E3;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.content-second-ttl {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.content-second-subttl {
     color: #00A5E3;
     font-size: 1rem;
     line-height: 1.7;
@@ -80,6 +92,67 @@ p {
     font-size: 1.28rem;
 }
 }
+/* ページネーション */
+.page-nation {
+    display: flex;
+    column-gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+.page-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.063rem;
+    height: 4.063rem;
+    background: #fff;
+    border: solid 1px #8F8F8F;
+    border-radius: 0.75rem;
+    font-size: 1.563rem;
+    color:#8F8F8F;
+    font-family: "din-2014", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.page-nation .page-numbers:hover:not(.page-numbers.is-active) {
+    background: #00A5E3;
+    border: solid 1px #00A5E3;
+    color: #fff;
+}
+.page-numbers.is-active {
+    background-color: #00A5E3;
+    border: solid 1px #00A5E3;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* パンくずリスト */
+.breadcrumbs {
+    margin: 0 10rem;
+    padding: 1.25rem 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    font-size: 1rem;
+}
+.breadcrumbs li {
+    display: inline;
+    list-style: none;
+}
+.breadcrumbs :not(:first-child)::before{
+    content: '>';
+    margin: 0.4rem;
+}
+.breadcrumbs li a:hover {
+    opacity:0.5
+}
+.breadcrumbs li:last-of-type a:hover { 
+    opacity:1;
+}
+
 @media all and (max-width : 1024px)  {
     body {
         font-size: 1rem;
@@ -94,7 +167,7 @@ p {
         
     }
     .wrapper-second {
-        padding: 3.75rem 3.75rem 4.4rem;
+        padding: 3rem 3.75rem 3rem;
     }
 
     .headlign {
@@ -108,20 +181,26 @@ p {
     }
     .content-subttl {
         color: #00A5E3;
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    .content-second-ttl {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    .content-second-subttl {
+        color: #00A5E3;
         font-size: .9rem;
         line-height: 1.7;
     }
     .headlign-txt {
         margin-top: 1.55rem;
-        font-size: .9rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
     .headlign-txt-second {
         margin-top: 3.1rem;
-        text-align: center;
-    }
-    .headlign-txt-second.medium {
-        font-size: 1.15rem;
     }
 }
 
@@ -139,7 +218,7 @@ p {
         
     }
     .wrapper-second {
-        padding: 3.5rem 1.8rem 3.75rem;
+        padding: 3.5rem 1.8rem 1.75em;
     }
 
     .headlign {
@@ -153,7 +232,7 @@ p {
     }
     .content-subttl {
         color: #00A5E3;
-        font-size: 1rem;
+        font-size: .5rem;
         line-height: 1.7;
     }
     .headlign-txt {
@@ -163,9 +242,49 @@ p {
     }
     .headlign-txt-second {
         margin-top: 1.25rem;
-        text-align: center;
     }
-    .headlign-txt-second.medium {
-        font-size: 1.05rem;
+    /* パンくずリスト */
+    .breadcrumbs {
+        font-size: 0.7rem;
     }
+    .page-nation{
+        column-gap: 0.8rem;
+    }
+    .page-numbers{
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1600px)  {
+.wrapper-second {
+    padding: 2rem 13rem 4rem;
+}
+.breadcrumbs {
+    margin: 0 10rem;
+    padding: 1.25rem 0;
+    font-size: 0.8rem;
+}
+.breadcrumbs li {
+    display: inline;
+    list-style: none;
+}
+.breadcrumbs :not(:first-child)::before{
+    content: '>';
+    margin: 0.4rem;
+}
+.breadcrumbs li a:hover {
+    opacity:0.5
+}
+.breadcrumbs li:last-of-type a:hover { 
+    opacity:1;
+}
+.page-nation {
+    column-gap: 1rem;
+}
+.page-numbers {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+}
 }
