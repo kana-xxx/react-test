@@ -83,10 +83,10 @@
     width: 14rem;
     height: 100%;
 }
-.earthsupport-logo img {
+/* .earthsupport-logo img {
     width: 19rem;
     height: 3.372rem;
-}
+} */
 .hr {
     margin-top: 0.25rem;
     border: 0.031rem solid #d2d2d2;
@@ -147,9 +147,9 @@
         width: 6.5rem;
         height: 100%;
     }
-    .earthsupport-logo img {
+    /* .earthsupport-logo img {
         height: 1.566em;
-    }
+    } */
     .hr {
         margin-top: 0.1rem;
     }
@@ -223,10 +223,10 @@
         width: 9rem;
         height: 100%;
     }
-    .earthsupport-logo img {
+    /* .earthsupport-logo img {
         width: 12rem;
         height: 2.168rem;
-    }
+    } */
     .hr {
         margin: 0.625rem 0;
     }
@@ -263,10 +263,10 @@
     width: 11rem;
     height: 100%;
 }
-.earthsupport-logo img {
+/* .earthsupport-logo img {
     width: 13rem;
     height: 2.649rem;
-}
+} */
 .hr {
     margin-top: 0.25rem ;
     border: 0.031rem solid #d2d2d2;
