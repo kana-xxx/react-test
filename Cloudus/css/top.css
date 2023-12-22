@@ -1,2 +1,1589 @@
 @charset "utf-8";
 
+.TB,.SP,.support-sp{
+    display: none;
+}
+
+main{
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/*ファーストビュー*/
+.first-view{
+    position: relative;
+    width: 100%;
+}
+
+.fv-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate(25%, 53%);
+    font-size: 3.75rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: rgba(0, 0, 0,0.2) 0.1875rem 0.1875rem 0.375rem;
+    z-index: 15;
+    line-height: 1.5;
+}
+
+.carousel {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.carousel img {
+    z-index:1;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    -webkit-animation: carouselanime 18s 0s infinite;
+    animation: carouselanime 18s 0s infinite; }
+
+.carousel img:nth-of-type(2) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s; }
+
+.carousel img:nth-of-type(3) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s; }
+
+.carousel img:nth-of-type(4) {
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s; }
+
+@keyframes carouselanime {
+    0% {
+    opacity: 0;
+}
+    15% {
+    opacity: 1;
+}
+    50% {
+    opacity: 1;
+}
+    65% {
+    opacity: 0;
+    transform: scale(1.1) ;
+    z-index:9;
+}
+    100% { opacity: 0 }
+}
+
+/*ロゴスライド*/
+.logo-slide {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+/* slide-logo*/
+.slide-logo .slick-track{
+    display: flex;
+    gap:5rem;
+}
+.logo-item {
+    width: 100%; /*任意の横幅を指定*/
+    height: 4rem; /*任意の高さを指定*/
+    object-fit: contain;
+    display:block;
+}
+
+
+/* クラウダスとは？ */
+.description h3{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.description img{
+    width: 4rem;
+    vertical-align: text-bottom;
+    margin-bottom :-0.5rem; ;
+}
+
+.about-cloudus-rogo{
+    width: 13.75rem;
+    display:block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2.125rem;
+    
+}
+
+.about-pcmockup{
+    width: 36.25rem;
+    margin-top: 0.5rem;
+}
+
+.wrapper-contents{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem,1fr));
+    text-align: center;
+    justify-content: center;
+    margin-top: 3.4375rem;
+}
+
+.content-tittle{
+    text-align: center;
+    margin: 0 auto;
+    width: 25rem;
+    box-shadow: 0 0 1.25rem  rgba(143, 143, 143,0.2);
+    border-radius: 1.0625rem;
+    padding: 1.0625rem 0;
+}
+.content-tittle span{
+    font-size: 1.375rem;
+    font-weight: bold;
+    vertical-align: super;
+}
+
+.about-tyeck{
+    width: 2rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.content-tittle p{
+    margin-top: 1.75rem;
+}
+.content-img{
+    width: 18.75rem;
+    margin-top: 2rem;
+}
+
+.wrapper-content p{
+    margin-top: 2rem;
+    line-height: 1.7rem;
+}
+
+.wrapper-no1{
+    margin-top: 2rem;
+}
+
+.wrapper-no1 p{
+    display:inline-block;
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.625rem;
+}
+
+.no1{
+    display: inline-block;
+    font-weight: bold;
+    color: #ff8900;
+    font-size: 3.75rem;
+    margin: 0 0.8rem;
+}
+
+/* クラウダスの機能 */
+.function-contents{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.function-content{
+    background-color: #fff;
+    border-radius: 2.5rem;
+    width: 25rem;
+    box-shadow:  0rem 0rem 6rem #DFDFDF;
+    padding: 3rem 0rem 2rem 0;
+}
+.function-content p{
+    font-weight: bold;
+}
+
+.function-img{
+    width: 11.75rem;
+    margin-top: 1.8rem;
+}
+
+.service{
+    margin-top: 1.8rem;
+}
+
+.service a {
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    letter-spacing: 0.10em;
+    border-radius: 1.1em ;
+    font-size: 1rem;
+    padding: 1.5rem 6rem;
+    margin: 0 auto;
+    display: inline-block;
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.juhattyuu a{
+    background-color: #00A5E3;
+}
+
+.juhattyuu a:hover{
+    background-color: rgba(0, 168, 230,0.5)
+}
+
+.haisyakanri a{
+    background-color: rgba(150,193,21,1);
+}
+
+.haisyakanri a:hover{
+    background-color: rgba(150,193,21,0.5);
+}
+
+.eigyousienn a{
+    background-color: rgba(229,1,101,1);
+}
+
+.eigyousienn a:hover{
+    background-color: rgba(229,1,101,0.5);
+}
+
+/* 産業資源循環協会の推奨システム */
+.recommendation-back{
+    /* background-color: #F2FBFE; */
+    padding: 6.25rem 15rem;
+    border-radius: 5.5rem;
+    display: inline-block;
+}
+
+.recommendation img{
+    width: 35rem;
+}
+
+.recommendation-rogos img{
+    width: 22rem;
+    margin:2.5rem;
+    mix-blend-mode: darken;
+}
+/* 導入事例 */
+.view-all{
+    display: block;
+    height: 2.9375rem;
+    text-align: center;
+    margin: 2.5rem auto;
+    padding: 0 0.8rem;
+    width: 27rem;
+}
+
+.view-all a{
+    width: 100%;
+    position: relative;
+}
+.view-all img{
+    width: 2rem;
+    transform: translateY(-15%);
+}
+
+.view-all-texts{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding: 2rem 1rem 0.5rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    
+}
+
+.view-all a::after{
+    position: absolute;
+    right: 0;
+    content: '';
+    width: 200%;
+    height: 0.1rem;
+    background-color: #35383e;
+}
+
+.view-all a:hover::after{
+    position: absolute;
+    right: 0;
+    content: '';
+    width: 200%;
+    height: 0.1rem;
+    background-color: #35383e;
+    animation: anim 0.6s ease-in forwards;
+    transform-origin: center left;
+}
+
+@keyframes anim{
+    0%{transform:  scaleX(0);}
+    100%{transform: scaleX(100%);}
+}
+
+/* 費用 */
+.price-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.price-card{
+    width: 26.875rem;
+    background-color: #fff;
+    box-shadow: 0rem 0rem 0.375rem rgba(64,64,64,0.2);
+    border-radius: 2.25rem;
+    padding: 2.5rem 0.8rem;
+    height: 25rem;
+}
+.price-gate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.price-card h3{
+    color: #fff;
+    font-weight: bold;
+    background-color: #00A5E3;
+    width: 90%;
+    padding: 1.25rem 0rem;
+    border-radius: 1rem;
+}
+.price-card p{
+    text-align: left;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.price-center p{
+    text-align: right;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.price-center{
+    height: 9rem;
+}
+.freetax{
+    width: 8rem;
+    display: inline-block;
+}
+
+.price-center{
+    margin-top: 1rem;
+    display: flex;
+    align-items:center; 
+    vertical-align: bottom;
+    gap: 1rem;
+}
+
+.fivetax{
+    display: inline-block;
+    width: 13rem;
+}
+
+.price-slash{
+    font-size: 1.8rem;
+    display: inline-block;
+    padding-top: 2rem;
+}
+
+
+
+
+
+.price-plus{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+/* サポート */
+
+.headlign-support{
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.support-img{
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    width: 19.625rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.support-q{
+    position: absolute;
+    top:0;
+    left:-18rem;
+    width: 20rem;
+}
+
+.support-qq{
+    position: absolute;
+    bottom:0;
+    right: -18rem;
+    width: 20rem;
+}
+
+.support>img{
+    width: 7.25rem;
+    margin: 3.75rem 0;
+}
+
+.support-texts{
+    color: #ff8900;
+    font-weight: bold;
+    font-size: 1.875rem;
+    
+}
+
+.support-text{
+    font-size: 2.25rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.support-contentss{
+    display: flex;
+    justify-content: center;
+}
+
+.support-contents{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25rem,1fr));
+    column-gap: 3rem;
+    row-gap: 4rem;
+    margin-top: 8rem;
+    width: 25rem;
+    justify-content: center;
+}
+
+.support-content{
+    position: relative;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    padding: 4rem 0;
+    text-align: center;
+    margin: 1rem auto;
+    box-shadow: 0rem 0rem 0.375rem rgba(64,64,64,0.2);
+}
+
+.support-numbers{
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 5.625rem;
+}
+
+.support-number{
+    display: inline-block;
+    width: 5.625rem;
+    line-height: 5.625rem;
+    background-color: #00A5E3;
+    color:#fff;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    font-family: "din-2014", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.support-imgbox{
+    height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
+
+.support-imgbox img{
+    width: 7rem;
+}
+
+.text-underline{
+    background:linear-gradient(transparent 70%,#B2E1F5 70%,#b2e1f5ce 100%);
+}
+
+.support-content h3{
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.625rem;
+}
+
+.support-content h3:after{
+    content: '';
+    display: block;
+    width: 3.125rem;
+    height: 0.3125rem;
+    background-color: #00A5E3;
+    margin: 1rem auto 0rem;
+}
+
+.support-content p{
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    line-height: 1.8rem;
+}
+
+/* お問い合わせ */
+
+.contact-contents{
+    background:url('/img/PC-contact.png')no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    font-weight: medium;
+    padding: 7rem 0;
+}
+
+.contact-contents h3{
+    font-size: 1.5rem;
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contact-buttons{
+    margin: 6.25rem 0 0 0;
+    
+}
+
+.contact-button{
+    position: relative;
+    display: inline-block;
+    border-radius: 1.875rem;
+    background-color: #fff;
+    box-shadow: rgba(0,0,0,0.2) 0.1875rem 0.1875rem 0.375rem;
+    color: #35383e;
+    font-size: 1rem;
+    align-items: center;
+    margin: 0 6rem;
+    overflow: hidden;
+}
+
+.contact-button::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ;
+}
+
+.contact-button:hover::after{
+    background-color: rgba(255, 255, 255,0.5) ;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.contact-button a{
+    display: block;
+    width: 25rem;
+    height: 8rem;
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.contact-item{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    
+}
+
+.contact-tel{
+    display: flex;
+    font-size: 2rem;
+    font-family: "din-2014", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 0.4rem;
+    letter-spacing: 0.03rem;
+    align-items:start;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+
+
+.contact-icon{
+    width: 2.5rem;
+    margin-right: 0.3rem;
+}
+
+.contact-icon-tel{
+    width: 1.6rem;
+    margin-right: 0.3rem;
+}
+
+.contact-time{
+    display: block;
+    font-size: 0.875rem;
+}
+.contact-telnumber{
+    display: block;
+}
+
+.contact-text{
+    vertical-align: super;
+}
+
+
+
+
+/* デバイス125％用 */
+@media all and (min-width: 1025px) and (max-width: 1600px) {
+    
+
+    
+    /* 125 ファーストビュー */
+    .fv-text{
+        transform: translate(20%, 40%);
+        font-size: 3.1rem;
+        line-height: 1.3;
+    }
+
+    /* 125 クラウダスとは？ */
+    .wrapper-contents{
+        gap: 0rem;
+        padding: 0 10rem;
+    }
+
+    .content-tittle span{
+        font-size: 1.25rem;
+        font-weight: 700;
+        font-style: normal;
+        vertical-align: super;
+    }
+
+    .about-tyeck{
+        width: 2rem;
+        display: inline-block;
+        margin-right: 0.4rem;
+    }
+
+    .wrapper-content p{
+        padding: 0rem 0.5rem;
+        font-size: 1rem;
+    }
+    
+    .content-tittle{
+        width: 20rem;
+        padding: 1.0625rem 2rem;
+    }
+
+    .content-tittle p{
+        margin-top: 0rem;
+        padding-bottom: 1.8rem;
+    }
+
+    .content-img{
+        width: 14rem;
+    }
+
+    .wrapper-no1 p{
+        font-size: 1.25rem;
+    }
+
+    /* 125 クラウダスの機能 */
+    .function-contents{
+    gap: 1.5rem;
+    padding: 0rem;
+    }
+
+    .function-content{
+    padding: 2rem 1.8rem 1.8rem 1rem;
+    width: auto;
+    }
+
+    .function-img{
+    width: 8rem;
+    margin-top: 1rem;
+    }
+
+    .service{
+    margin-top: 1rem;
+    }
+
+    .service a {
+        font-size: 0.9rem;
+        padding: 1.1rem 3rem;
+    }
+
+    /* 125 産業資源循環協会の推奨システム */
+    .recommendation-back{
+    padding: 6.25rem 6rem;
+    }
+
+    .recommendation-rogos img{
+        width: 15rem;
+        margin:1.8rem;
+    }
+
+    /* 導入事例 */
+    .view-all-texts{
+        font-size: 1rem;
+        padding: 2rem 1rem 0.2rem;
+    }
+    
+    /* 125 費用 */
+
+    .price-card{
+        height: 24rem;
+    }
+    .price-card h3{
+        font-size: 1.3rem;
+    }
+    .price-center p{
+        font-size: 1rem;
+    }
+    
+    /* 125 サポート */
+
+    .support-img{
+        position: relative;
+        width: 15rem;
+    }
+
+    .support-q{
+        position: absolute;
+        top:0;
+        left:-15rem;
+        width: 18rem;
+    }
+    
+    .support-qq{
+        position: absolute;
+        bottom:0;
+        right: -15rem;
+        width: 18rem;
+    }
+
+    .support-texts{
+        color: #ff8900;
+        font-weight: bold;
+        font-size: 1.3rem;
+        
+    }
+
+    .support-text{
+        font-size: 2.1rem;
+        display: inline-block;
+    }
+        
+    .support-contents{
+        grid-template-columns: repeat(3, minmax(18rem,1fr));
+        column-gap: 2rem;
+        row-gap: 5rem;
+    }
+    
+    .support-content{
+        position: relative;
+        width: 19rem;
+        padding: 4.5rem 0 2rem;
+    }
+
+    .support-numbers{
+        top: -10%;
+    }
+
+    .support-number{
+        width: 4.5rem;
+        line-height: 4.5rem;
+        font-size: 1.8rem;
+    }
+
+    .support-imgbox{
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .support-imgbox img{
+        width: 4rem;
+    }
+
+    .support-content p{
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    /* 125 お問い合わせ */
+    .contact-contents h3{
+        font-size:1.25rem;
+    }
+
+    .contact-button{
+        margin: 0 2rem;
+    }
+
+    .contact-button a{
+    width: 22rem;
+    height: 7.8rem;
+    font-size: 1rem;
+    }
+
+    .contact-tel{
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+        margin-top: 0.6rem;
+    }
+
+
+    .contact-time{
+        display: block;
+        font-size: 0.875rem;
+    }
+
+}
+
+
+/* ヘッダー　タブレット*/
+@media all and (max-width : 1024px) {
+.PC,.SP,.support-sp{
+    display: none;
+}
+.TB{
+    display: block;
+}
+
+
+/* タブレットFV */
+.fv-text{
+    font-size: 3.125rem;
+    transform: translate(10%, 58%);
+}
+
+/*ロゴスライド*/
+.logo-slide {
+    width: 100%;
+    margin: 1.8rem 0;
+}
+
+/* slide-logo*/
+.slide-logo .slick-track{
+    display: flex;
+    gap:2rem;
+}
+.logo-item {
+    width: 100%; /*任意の横幅を指定*/
+    height: 3rem; /*任意の高さを指定*/
+    object-fit: contain;
+    display:block;
+}
+
+/* タブレット クラウダスとは */
+.description h3{
+    font-size: 1.3rem;
+}
+
+.description img{
+    width: 3rem;
+}
+
+.about-cloudus-rogo{
+    width: 6.25rem;
+    margin-top: 1.5625rem;
+}
+
+.about-pcmockup{
+    width: 17.25rem;
+}
+.wrapper-contents{
+    grid-template-columns: repeat(3, minmax(13rem,1fr));
+    gap: 0.875rem;
+}
+
+.content-tittle{
+    width: 13rem;
+}
+
+.content-tittle span{
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.about-tyeck{
+    width: 1.8rem;
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.content-tittle span::before{
+    top:50%;
+    transform: translateY(-50%);
+    display: block;
+    background-size: 1.8rem;
+    background-position: center;
+}
+
+.content-img{
+    width: 10.3125rem;
+    margin-top: 0rem;
+}
+.wrapper-content{
+    width: 13.75rem;
+}
+
+.wrapper-content p{
+    margin-top: 0.6rem;
+    height: 5.375rem;
+    text-align: left;
+    font-size: .9rem;
+    line-height: 1.45;
+}
+
+.wrapper-no1 p{
+    font-size: 1.125rem;
+}
+
+.no1{
+    font-size: 2.375rem;
+}
+
+/* タブレット クラウダスの機能 */
+
+.function-contents{
+    justify-content: center;
+    gap:0.875rem;
+}
+
+.function-content{
+    height: auto;
+    padding: 2rem 1rem;
+    font-size: 0.8rem;
+}
+
+.function-img{
+    width: 6.25rem;
+    margin-top: 0.8rem;
+}
+
+.service{
+    margin-top:0.8rem;
+}
+
+.service a {
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    letter-spacing: 0.10em;
+    border-radius: 1.1em ;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.8rem 3rem;
+    margin: 0 auto;
+}
+
+/* タブレット 産業資源循環協会の推奨のシステム */
+.recommendation-back{
+    width: 43rem;
+    padding: 2.625rem 1.5625rem;
+}
+.recommendation-p{
+    padding: 0 4rem;
+}
+
+.recommendation img{
+    width: 22.6875rem;
+}
+
+.recommendation-rogos img{
+    width: 12.5rem;
+    margin:1.875rem;
+}
+
+/* タブレット 導入事例 */
+
+.view-all{
+    width: 17rem;
+}
+.view-all a{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    pointer-events: none;
+}
+
+.view-all a::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    background-color: #35383e;
+    
+}
+.view-all-texts{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    padding: 2rem 1rem 0rem;
+}
+
+/* タブレット 費用 */
+
+.price-cards{
+    gap: 0rem;
+}
+
+.price-card{
+    width: 20rem;
+    padding: 2rem;
+    height: 19rem;
+}
+
+.freetax{
+    width: 5rem;
+}
+
+.price-center{
+    gap: 0.8rem;
+    height: 4rem;
+    align-items: middle;
+    margin-top: 2.5rem;
+}
+
+.price-center p{
+    margin-top: 0;
+}
+
+.fivetax{
+    width: 8rem;
+}
+
+.price-slash{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.price-plus{
+    margin: 0 0.5rem;
+}
+/* タブレット サポート */
+.support-img{
+    width: 11.125rem;
+}
+
+.support-q{
+    top: 0;
+    left: 0;
+    border-radius:  5rem 5rem 0% 5rem;
+    transform: translateX(-90%);
+    width: 17rem;
+}
+
+.support-qq{
+    bottom: -20%;
+    left:0;
+    transform: translateX(35%);
+    padding:2.5rem;
+    width: 22rem;
+}
+
+.support>img{
+    width: 4rem;
+    margin: 1.5625rem 0;
+}
+
+.support-texts{
+    font-size: 1.125rem;
+}
+
+.support-text{
+    font-size: 1.375rem;
+}
+
+.support-contents{
+    text-align: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(13rem,1fr));
+    column-gap: 0rem;
+    row-gap: 4rem;
+    margin-top: 4rem;
+}
+
+.support-content{
+    position: relative;
+    padding: 2.5rem 0.2rem  2rem;
+    width: 14rem;
+    margin: 0 1rem;
+}
+
+.support-content h3{
+    font-size: 1.0625rem;
+}
+
+.support-content h3:after{
+    width: 1rem;
+    height: 0.2rem;
+    margin: 0.8rem auto 0rem;
+}
+
+.support-numbers{
+    position: absolute;
+    top: -1.5rem;
+    line-height: 2.5rem;
+}
+
+.support-number{
+    width: 2.8rem;
+    line-height: 2.8rem;
+    font-size: 1.125rem;
+}
+
+.support-imgbox{
+    margin-top: 0.8rem;
+    height: 3.9rem;    
+}
+
+.support-imgbox img{
+    width: 4rem;
+}
+
+.support-content p {
+    margin-top: 0.8rem;
+    line-height: 1.5;
+}
+/* タブレット お問い合わせ */
+
+.contact-contents{
+    background:url('/img/TB-contact.png')no-repeat;
+    background-size: 100%;
+    padding: 2rem 0rem;
+}
+.contact-contents h3{
+    font-size: 1.0625rem;
+}
+
+
+.contact-icon{
+    width: 1.8rem;
+}
+.contact-buttons{
+    margin-top: 2rem;
+}
+
+.contact-button{
+    width: 16.375rem;
+    height: 5.8rem;
+    font-size: 0.875rem;
+    margin: 0 2.5rem;
+    border-radius: 1.2rem;
+}
+
+.contact-tel{
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+.contact-item{
+    font-size: 1rem;
+}
+
+.contact-time{
+    font-size: 0.6rem;
+}
+
+.contact-icon-tel{
+    width: 1rem;
+    margin-right: 0.3rem;
+    padding-top: 0.15rem;
+}
+
+
+}
+
+/*レスポンシブ：スマホ*/
+@media all and (max-width : 599px){
+    .SP{
+        display: block;
+    }
+    .PC,.TB{
+        display: none;
+    }
+    
+
+    
+
+
+/* スマホ　ファーストビュー */
+.fv-text{
+    transform: translate(2%, 60%);
+    font-size: 1.875rem;
+}
+
+  /* カルーセル内の画像トリミング基準 */
+.carousel img {
+    object-position: 100% 0%;
+}
+
+
+/*ロゴスライド*/
+.logo-slide {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+/* slide-logo*/
+.slide-logo .slick-track{
+    display: flex;
+    gap:0 4rem;
+}
+
+    .logo-item {
+    width: 8.75rem; /*任意の横幅を指定*/
+    height: 2.5rem; /*任意の高さを指定*/
+    object-fit: contain;
+}
+
+.description h3{
+    font-size: 1.3rem;
+}
+
+.description img{
+    width: 3.5rem;
+    margin-bottom: -0.5rem;
+}
+
+
+.about-cloudus-rogo{
+    width: 7.5rem;
+    margin-top: 2.125rem;
+
+}
+
+.about-pcmockup{
+    width: 20rem;
+    margin-top: 0.5rem;
+
+}
+
+.wrapper-contents{
+    display: flex;
+    flex-direction: column;
+    margin-top :3.4rem;
+    gap: 5rem;
+}
+
+.wrapper-content{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.wrapper-content p{
+    height: 4rem;
+    padding: 0rem 1rem;
+}
+
+.content-tittle{
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.content-tittle span::before{
+    left: -50;
+}
+
+.about-tyeck{
+    width: 1.8rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding-bottom: 0.1rem;
+
+}
+
+.content-tittle p{
+    margin-top: 0.8rem;
+}
+.content-img{
+    width: 15rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+/* スマホ クラウダスの機能 */
+
+.function-contents{
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.function-content{
+    width: 100%;
+    padding: 1.5rem 0;
+}
+.function-content p{
+    font-size: 1rem;
+}
+
+.function-img{
+    width: 7rem;
+    margin-top: 0.9rem;
+}
+
+.service{
+    margin: 1.875rem 0;
+    margin-top: 1.5rem;
+}
+
+.service a {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.1rem 3rem;
+    margin: 0 auto;
+    border-radius: 1.3rem;
+}
+
+.service a::after{
+    background-size: 0.4rem;
+    transform: translate(30%,-9%);
+}
+
+/* スマホ 産業資源循環協会の推奨のシステム */
+.recommendation-back{
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.recommendation-p{
+    padding: 0 0.1rem;
+}
+
+.recommendation img{
+    width: 100%;
+}
+
+.recommendation-rogos{
+    margin-top: 3rem;
+}
+
+
+.recommendation-rogos>img{
+    width: 14rem;
+    margin:0.9rem 0 0 0;
+}
+
+.view-all{
+    width: 18.75rem;
+
+}
+.view-all a {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.view-all a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    background-color: #35383e;
+}
+
+/* スマホ 費用 */
+
+.price-cards{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.price-card{
+    width: 90%;
+    padding: 2rem 1rem;
+    height: auto;
+}
+
+
+.price-card h3{
+    width: 100%;
+    padding: 1.1rem 0rem;
+}
+
+.price-center{
+    height: 5rem;
+    margin-top: 1.5rem;
+}
+
+.fivetax{
+    padding-top: 0rem;
+}
+.price-slash{
+    padding-top: 1.2rem;
+}
+
+/* スマホ サポート */
+.support-img{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 13rem;
+}
+
+.support>img{
+    width: 5rem;
+}
+
+.support-sp{
+    display:block;
+    width: 19rem;
+    margin-left: -3rem;
+    margin-top: 2rem;
+}
+
+.support-q{
+    display: none;
+}
+
+.support-qq{
+    display: none;
+}
+
+.support-texts{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.support-text{
+    font-size: 1.5rem;
+}
+.support-contents{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    margin-top:-1rem ;
+}
+
+.support-content{
+    width: 90%;
+    padding-top:5rem;
+    margin-top: 5rem;
+}
+
+.support-content h3{
+    font-size: 1.25rem;
+}
+
+.support-content h3:after{
+    width: 1.5rem;
+    height: 0.3rem;
+    margin: 0.8rem auto 0rem;
+}
+
+.support-numbers{
+    top:-10%;
+}
+
+.support-number{
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 1.6875rem;
+}
+
+.support-imgbox{
+    height: 6rem;
+    display: flex;
+}
+
+.support-imgbox img{
+    width: 6rem;
+
+}
+
+.support-content p{
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+
+/* スマホ お問い合わせ */
+.contact-contents{
+    background:url('/img/SP-contact.png')no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-contents h3{
+    padding: 0 2rem;
+}
+
+.contact-buttons{
+    margin: 0.8rem 0 0;
+}
+
+.contact-button{
+    width: 65%;
+    height: 6rem;
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 1.1rem;
+}
+
+.contact-button a{
+    height: 4rem;
+}
+
+.contact-tel{
+    font-size: 1.5rem;
+    margin-top: 0.3rem;
+}
+
+.contact-icon{
+    width: 1.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.contact-icon-tel{
+    width: 0.9rem;
+    margin-right: 0.3rem;
+    padding-top: 0.2rem;
+}
+
+.contact-time{
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+}
+
+}

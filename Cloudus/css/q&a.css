@@ -1,0 +1,694 @@
+@charset "utf-8";
+.magin-zero{
+    margin-top: 0rem;
+}
+
+.SP{
+    display: none;
+}
+
+.select-button{
+    display: inline-block;
+    width: 15.625rem;
+    background-color: #fff;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0,0.2);
+    border-radius: 13px;
+    padding: 1.5rem 2rem;
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+    margin: 0.6rem 1.6rem;
+}
+.select-button span{
+    display: inline-block;
+    margin-right: 0.8rem;
+}
+
+.faq-btn{
+  width: 1.3rem;
+  height: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.container{
+    margin-top: 12.5rem;
+    padding-bottom: 5rem;
+}
+
+.gyousya{
+    font-size: 1.625rem;
+    padding-top: 150px; /* 調整したい高さ（固定ヘッダーの高さ） */
+    margin-top: -150px;
+}
+
+.qa{
+    margin-top: 4.375rem;
+    padding: 0 2rem;
+}
+
+.qa-title{
+    text-align: left;
+    font-size: 1.625rem;
+    padding-left: 1.25rem;
+    line-height: 1.5;
+    margin-top: 7.5rem;
+}
+/* タイトル横棒の色 */
+.orange{
+    border-left: 5px solid #FF970E;
+}
+
+.blue{
+    border-left: 5px solid #00A5E3;
+}
+
+.green{
+    border-left: 5px solid #96C115;
+}
+
+.pink{
+    border-left: 5px solid #E50165;
+}
+
+
+
+
+
+
+
+/* アコーディオン スタイル */
+.qa-block{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-top: 1.875rem;
+}
+
+.qa-item{
+    display: inline-block;    
+}
+
+.qa-item:last-child{
+    border-bottom: 1px solid #707070;
+}
+
+.qa-head{
+    position: relative;
+    text-align: left;
+    width: 100%;
+    border-top: 1px solid #707070;
+    display: flex;
+    padding:2rem 3rem 2rem 0rem;
+}
+
+
+/* 質問文 */
+.question{
+    position: relative;
+    margin-left: 4rem;
+    width: 100%;
+}
+
+.question::after{
+    position: absolute;
+    content: 'Q';
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    transform: translateY(-35%);
+    left: -3%;
+    font-weight: 700;
+    font-style: normal;
+    color: #707070;
+    font-size: 2rem;
+}
+/* ----------------- */
+
+.qa-body{
+    border: transparent;
+    text-align: left;
+    margin-left: 6rem;
+    margin-right: 10rem;
+    font-size: 1.0625rem;
+    /* 以下修正 */
+    opacity: 0;
+    height: 0;
+    margin-bottom: 0;
+    line-height: 0;
+    position: relative;
+     animation-timing-function: ease-in-out;
+    animation-name: accordion;
+    animation-name: close-accordion;
+    animation-duration: .5s;
+}
+
+  /* 以下追加 */
+  @keyframes accordion{
+    0% {
+      opacity: 0;
+      height: 0;
+    }
+  50% {
+    opacity: .5;
+    height: 70%;
+  }
+    100% {
+      opacity: 1;
+      height: 100%;
+    }
+}
+
+    @keyframes close-accordion{
+        0% {
+          opacity: 1;
+        }
+        50% {
+            opacity: .4;
+          }
+        100% {
+          opacity: 0;
+    
+        }
+    }
+
+.qa-body.is-open{
+    opacity: 1;
+    line-height: 1.5;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+  /* 以下修正
+  qa-bodyの擬似要素にAを追加
+  */
+  .qa-body::before{
+    content: 'A';
+    width: 2rem;
+    transform: translateY(-4%);
+    top: -0.6rem;
+    left: -4.7%;
+    position: absolute;
+    font-family: "noto-sans-cjk-jp", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    opacity: 0;
+    line-height: 0;
+    height: 0;
+    animation-timing-function: ease-in-out;
+    animation-name: accordion-img;
+    animation-name: close-accordion-img;
+    animation-duration: .8s;
+}
+
+  /* 以下追加 */
+@keyframes accordion-img{
+    0% {
+      opacity: 0;
+      height: 0;
+      top: -4%;
+      transform: translateY(80%);
+    }
+  50% {
+    opacity: .2;
+    height: 30%;
+    top: -4%;
+    transform: translateY(20%);
+  }
+    100% {
+      opacity: 1;
+      height: 100%;
+      top: -4%;
+      transform: translateY(20%);
+      
+    }
+}
+@keyframes close-accordion-img{
+    0% {
+      opacity: 1;    
+      height: 100%;
+    }
+    50% {
+        opacity: .4;
+        height: 30%;
+      }
+    100% {
+      opacity: 0;
+      height: 0;
+
+    }
+}
+
+.answer-orange::before{
+    color: #FF970E;
+}
+.answer-bulue::before{
+    color: #00A5E3;
+}
+
+.answer-green::before{
+    color:#96C115;
+}
+
+.answer-pink::before{
+    color: #E50165;
+}
+
+
+.qa-body.is-open::before{
+    opacity: 1;
+    line-height: 1.5;
+    height: 1rem;
+}
+
+.qa-body p.is-open{
+    display: inline-block;
+    opacity: 1;
+}
+
+.qa-head.is-open::after{
+    transform: rotate(45deg) translateY(-10px);
+}
+
+/* ＋・－*/
+.qa-head::before,.qa-head::after  {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #707070;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s;
+    clear: both;
+    display: block;
+}
+
+.qa-head::after {
+    transform-origin: center;
+    transform: translateY(-50%) rotate(90deg);
+    transition: transform 0.3s;
+}
+
+.qa-head.is-open::before {
+    opacity: 0;
+}
+
+.qa-head.is-open::after {
+    transform-origin: center;
+    transform: translateY(-50%) rotate(180deg);
+    
+}
+/* -------------------------- */
+
+/* デバイス：125％ */
+@media all and (min-width: 1025px) and (max-width: 1600px) {
+    .select-button{
+        margin: 1rem 1.2rem;
+    }
+
+    .question::after{
+        position: absolute;
+        transform: translateY(-40%);
+        left: -5%;
+    }
+
+}
+
+/* デバイス：タブレット */
+@media all and (max-width : 1024px) {
+    .SP{
+        display: none;
+    }
+
+    .select-button{
+        font-size: 1rem;
+        border-radius: 10px;
+    }
+    .faq-btn{
+      width: 1rem;
+      height: 0.6rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .container{
+        margin-top: 9rem;
+    }
+    .qa{
+        margin-top: 0rem;
+    }
+
+    .qa-title{
+    font-size: 1.125rem;
+    margin-top: 6rem;
+}
+
+    .qa-block{
+        margin-top: 1.5rem;
+    }
+
+    .gyousya{
+    font-size: 1.125rem;
+}
+
+    .qa-head{
+        padding:1.9rem 6rem 1.9rem 0rem;
+        font-size: 0.875rem;
+        line-height: 1.3;
+    }
+    .question::after{
+        position: absolute;
+        transform: translateY(-40%);
+        left: -7%;
+        font-size: 1.8rem;
+    }
+    .qa-body{
+        font-size: 0.875rem;
+        position: relative;
+        animation-timing-function: ease-in-out;
+       animation-name: accordion;
+       animation-name: close-accordion;
+       animation-duration: .5s;
+    }
+    @keyframes accordion{
+        0% {
+          opacity: 0;
+          height: 0;
+        }
+      50% {
+        opacity: .5;
+        height: 70%;
+      }
+        100% {
+          opacity: 1;
+          height: 100%;
+        }
+    }
+    
+        @keyframes close-accordion{
+            0% {
+              opacity: 1;
+            }
+            50% {
+                opacity: .4;
+              }
+            100% {
+              opacity: 0;
+        
+            }
+        }
+
+        .qa-body::before{
+            content: 'A';
+            width: 2rem;
+            transform: translateY(-50%);
+            top: -0.4rem;
+            left: -7.5%;
+            position: absolute;
+            font-family: "noto-sans-cjk-jp", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 2rem;
+            opacity: 0;
+            line-height: 0;
+            height: 0;
+            animation-timing-function: ease-in-out;
+            animation-name: accordion-img;
+            animation-name: close-accordion-img;
+            animation-duration: .8s;
+        }
+        
+          /* 以下追加 */
+        @keyframes accordion-img{
+            0% {
+              opacity: 0;
+              height: 0;
+              top: 0%;
+              transform: translateY(50%);
+            }
+          50% {
+            opacity: .2;
+            height: 30%;
+            top: 10%;
+            transform: translateY(20%);
+          }
+            100% {
+              opacity: 1;
+              height: 100%;
+              top: 50%;
+              transform: translateY(-50%);
+              
+            }
+        }
+        @keyframes close-accordion-img{
+            0% {
+              opacity: 1;    
+              height: 100%;
+            }
+            50% {
+                opacity: .4;
+                height: 30%;
+              }
+            100% {
+              opacity: 0;
+              height: 0;
+        
+            }
+
+}}
+
+/*デバイス：スマホ*/
+@media all and (max-width : 599px){
+    .SP{
+        display: block;
+    }
+
+    .select-button{
+        padding: 1.2rem 2rem;
+        font-size: 1rem;
+    }
+
+    .select-button span{
+        position: relative;
+        display: inline-block;
+    }
+
+    .faq-btn{
+      width: 1rem;
+      height: 0.6rem;
+      margin-bottom: 0.1rem;
+    }
+    .container{
+        margin-top: 8rem;
+    }
+    
+
+    .gyousya{
+        font-size: 1.25rem;
+        padding-top: 100px; /* 調整したい高さ（固定ヘッダーの高さ） */
+    margin-top: -100px;
+    }
+
+    .haisyutu{
+        margin-top: 5em;
+    }
+
+    .qa{
+        margin-top: 3.2rem;
+        padding: 0rem;
+    }
+
+    .qa-title{
+        font-size: 1.125rem;
+        padding-left: 1.25rem;
+        line-height: 1.5;
+    }
+
+    /* アコーディオン スタイル */
+.qa-block{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    margin-top: 1.3rem;
+}
+
+.qa-item{
+    display: inline-block;    
+}
+
+.qa-item:last-child{
+    border-bottom: 1px solid #707070;
+}
+
+.qa-head{
+    position: relative;
+    text-align: left;
+    width: 100%;
+    border-top: 1px solid #707070;
+    display: flex;
+    padding:1.25rem 5rem 1.25rem 0rem;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* スマホ質問文 */
+
+    .question{
+        position: relative;
+        margin-left: 2rem;
+        width: 100%;
+    }
+
+    .question::after{
+        position: absolute;
+        content: 'Q';
+        width: 2rem;
+        height: 2rem;
+        top: 0;
+        transform: translateY(-25%);
+        left: -11%;
+        font-weight: 700;
+        font-style: normal;
+        color: #707070;
+        font-size: 1.25rem;
+    }
+
+    .qa-body{
+        padding-right: 2rem;
+        margin-left: 3.1rem;
+        margin-right: 2rem;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .qa-body{
+        border: transparent;
+        text-align: left;
+        margin-left: 3rem;
+        margin-right: 1rem;
+        font-size: 1.0625rem;
+        /* 以下修正 */
+        opacity: 0;
+        height: 0;
+        margin-bottom: 0;
+        line-height: 0;
+        position: relative;
+         animation-timing-function: ease-in-out;
+        animation-name: accordion;
+        animation-name: close-accordion;
+        animation-duration: .5s;
+    }
+    
+      /* 以下追加 */
+      @keyframes accordion{
+        0% {
+          opacity: 0;
+          height: 0;
+        }
+      50% {
+        opacity: .5;
+        height: 70%;
+      }
+        100% {
+          opacity: 1;
+          height: 100%;
+        }
+    }
+    
+        @keyframes close-accordion{
+            0% {
+              opacity: 1;
+            }
+            50% {
+                opacity: .4;
+              }
+            100% {
+              opacity: 0;
+        
+            }
+        }
+
+        .qa-body::before{
+            content: 'A';
+            width: 1rem;
+        
+            transform: translateY(-50%);
+            top: 2.5%;
+            left: -8%;
+            position: absolute;
+            font-family: "noto-sans-cjk-jp", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.25rem;
+            opacity: 0;
+            line-height: 0;
+            height: 0;
+            animation-timing-function: ease-in-out;
+            animation-name: accordion-img;
+            animation-name: close-accordion-img;
+            animation-duration: .8s;
+        }
+        
+          /* 以下追加 */
+        @keyframes accordion-img{
+            0% {
+              opacity: 0;
+              height: 0;
+              top: 0%;
+              transform: translateY(50%);
+            }
+          50% {
+            opacity: .2;
+            height: 30%;
+            top: 10%;
+            transform: translateY(20%);
+          }
+            100% {
+              opacity: 1;
+              height: 100%;
+              top: 50%;
+              transform: translateY(-50%);
+              
+            }
+        }
+        @keyframes close-accordion-img{
+            0% {
+              opacity: 1;    
+              height: 100%;
+            }
+            50% {
+                opacity: .4;
+                height: 30%;
+              }
+            100% {
+              opacity: 0;
+              height: 0;
+        
+            }
+        }
+
+
+    .qa-body p{
+        position: relative;
+    }
+    
+    .qa-body p::before{
+        content: 'A';
+        transform: translateY(-10%);
+        top: 0;
+        left: -8%;
+        position: absolute;
+        font-size: 1.25rem;
+    }
+
+    /* ＋・－*/
+.qa-head::before,.qa-head::after  {
+    content: '';
+    height: 1px;
+    position: absolute;
+}
+/* -------------------------- */
+}
