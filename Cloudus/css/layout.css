@@ -17,8 +17,6 @@ body {
     display:block;
     clear:both;
 }
-
-
 h2,h3,h4 {
     font-family: "noto-sans-cjk-jp", sans-serif;
     font-weight: 700;
@@ -37,7 +35,9 @@ p {
 a *, div *{
     transition: all 0.3s ;
     }
-
+a{
+    font-family: "noto-sans-cjk-jp", sans-serif; ;
+}
 .wrapper {
     margin-top: 10.6rem;
     padding: 0rem  17rem ;
@@ -47,7 +47,7 @@ a *, div *{
         background: #FAFAFA;
 }
 .wrapper-second {
-    padding: 5.9rem 17rem 8.2rem;
+    padding: 2rem 17rem 4rem;
 }
 .gray-wrap {
     background: #FAFAFA;
@@ -85,6 +85,16 @@ a *, div *{
     font-size: 1rem;
     line-height: 1.7;
 }
+.content-second-ttl {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.content-second-subttl {
+    color: #00A5E3;
+    font-size: 1rem;
+    line-height: 1.7;
+}
 .headlign-txt {
     margin-top: 2.3rem;
     font-size: 1rem;
@@ -94,7 +104,86 @@ a *, div *{
 
 .headlign-txt-second {
     margin-top: 3.1rem;
+    text-align: left;
+    display: inline-block;
+    margin: 3.1rem auto 0;
 }
+.headlign-txt-second.medium {
+    font-size: 1.4rem;
+}
+
+.headlign-txt-second.medium.bold {
+    font-weight: bold;
+}
+
+
+@media all and (min-width: 1025px) and (max-width: 1600px) {
+    .headlign-txt-second.medium {
+        font-size: 1.28rem;
+    }
+}
+/* ページネーション */
+.page-nation {
+    display: flex;
+    column-gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+.page-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.063rem;
+    height: 4.063rem;
+    background: #fff;
+    border: solid 1px #8F8F8F;
+    border-radius: 0.75rem;
+    font-size: 1.563rem;
+    color:#8F8F8F;
+    font-family: "din-2014", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.page-nation .page-numbers:hover:not(.page-numbers.is-active) {
+    background: #00A5E3;
+    border: solid 1px #00A5E3;
+    color: #fff;
+}
+.page-numbers.is-active {
+    background-color: #00A5E3;
+    border: solid 1px #00A5E3;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* パンくずリスト */
+.breadcrumbs {
+    margin: 0 10rem;
+    padding: 1.25rem 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    font-size: 1rem;
+}
+.breadcrumbs li {
+    display: inline;
+    list-style: none;
+}
+.breadcrumbs :not(:first-child)::before{
+    content: '>';
+    margin: 0.4rem;
+}
+.breadcrumbs li a:hover {
+    opacity:0.5
+}
+.breadcrumbs li:last-of-type a:hover { 
+    opacity:1;
+}
+
+
 /* ヘッダー*/
 header{
     width: 100%;
@@ -417,7 +506,7 @@ footer{
         padding-bottom: 6.3rem;
     }
     .wrapper-second {
-        padding: 3.75rem 3.75rem 4.4rem;
+        padding: 3rem 3.75rem 3rem;
     }
 
     .headlign {
@@ -434,9 +523,19 @@ footer{
         font-size: 1rem;
         line-height: 1.7;
     }
+    .content-second-ttl {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+    .content-second-subttl {
+        color: #00A5E3;
+        font-size: .9rem;
+        line-height: 1.7;
+    }
     .headlign-txt {
         margin-top: 1.55rem;
-        font-size: .9rem;
+        font-size: 1rem;
         line-height: 1.4;
     }
     .headlign-txt-second {
@@ -730,7 +829,7 @@ footer{
         padding-bottom: 3.75rem;
     }
     .wrapper-second {
-        padding: 3.5rem 1.8rem 3.75rem;
+        padding: 3.5rem 1.8rem 1.75em;
     }
 
     .headlign {
@@ -756,122 +855,4 @@ footer{
     .headlign-txt-second {
         margin-top: 1.25rem;
     }
-
-    /* スマホ・ヘッダー */
-    .header-lists a{
-        padding: 1em 0;
-    }
-
-    .rogo-img{
-        width: 8.5rem;
-        margin-left: 1rem;
-    }
-            /* ハンバーガーメニューのサイズ感調整 */
-    .responsive-headerMenu {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
-
-    /* スマホ メガメニュー */
-    .mega-menu{
-        padding: 8.125em 1.875em 9.125em 1.875em;
-        height: 100vh;
-    }
-    .mega-menu li{
-        margin: 0;
-    }
-    .mega-menu li >ul li{
-        border-bottom: none;
-}
-
-.page-list li >ul a{
-    padding: 0.5rem 1.5rem 0.5rem 0.8rem;
-}
-
-.header-button{
-    border-radius: 1.1rem ;
-}
-
-.button{
-    border-radius: 1.1rem ;
-}
-
-.menu {
-    width: 2.5rem;
-    height: 1.2rem;
-    cursor: pointer;
-    z-index: 10;
-    position: relative;
-}
-
-.mega-menu-button{
-    display: inline-block;
-    border-radius: 1.1em ;
-    color: #fff;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    letter-spacing: 0.10em;
-    margin: 0 auto;
-    width: 20rem;
-    margin-top: 1.4rem;
-}
-
-.mega-menu-button a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    width: 100%;
-    padding: 1.1em 2.5em;
-    font-size: 1.0625rem;
-}
-
-.mega-menu-footer li{
-    font-size:0.75em;
-    padding: 0rem;
-    margin: 0;
-}
-.button{
-    width: 18.75em;
-    font-size: 1.0625em;
-    letter-spacing: 0;
-    padding: 0;
-    margin-top: 3.5rem;
-    }
-
-    /* スマホ フッター */
-footer{
-    text-align: center;
-    padding: 0rem 3rem 3rem;
-}
-.footer-pagelinks li{
-    display: block;
-    font-size: 0.9rem;
-    border-left:none;
-    padding: 0.4rem 0rem;
-}
-
-.footer-pagelinks li:last-child{
-    border-right: none ;
-}
-
-.footer-rogo img{
-    width: 14rem;
-    margin-top: 2rem;
-}
-
-.corporate-info{
-    font-size: 0.9rem;
-    margin-top: 1.8rem;
-}
-
-.corporate-info li{
-    padding: 0.2rem 0;
-}
-.copylight{
-    margin-top: 1.5625rem;
-    color: #8F8F8F;
-    font-size: 0.7rem;
-}
-
-
 }

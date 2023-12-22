@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クラウダスサイト</title>
+
+   <!-- ファビコン -->
+   <link rel="apple-touch-icon" href="img/favicon-180×180.png" sizes="180x180"> 
+   <link rel="apple-touch-icon" href="img/favicon-150×150.png" sizes="150x150">
+   <link rel="shortcut icon" href="ico-faviocon.ico" sizes="any" type="image/svg+xml">
+   <link rel="icon" href="img/svg-favicon.svg" >
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/contact.css">
+       <!-- Noto Sans CJK JPフォントの読み込み -->
+   <script>
+    (function(d) {
+      var config = {
+        kitId: 'rvq3qba',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+<body>
+  <header></header>
+  <main>
+ <!--パンくずリスト  -->
+ <div class="outer-second">
+  <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="#"><span itemprop="name">トップ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item"><span itemprop="name">お問い合わせ</span>
+          </a>
+          <meta itemprop="position" content="2" />
+      </li>    
+  </ul>
+<!--第二階層・第三階層  -->
+<div class="outer-second">
+      <div class="wrapper-second function-wrapper">
+          <div class="content-second function-content">
+              <div class="headlign headlign-cloudus">
+                  <h2 class="content-ttl cloudus-ttl">お問い合わせ</h2>
+                  <p class="content-subttl cloudus-subttl">CONTACT</p>
+                  <p class="headlign-txt headlign-txt-second cloudus-headlign-txt">必要事項を入力いただき、送信ボタンをクリックしてください。<br class="tab-br">送信後、ご登録いただいたアドレスに自動返信メールが届きます。<br class="pc-br">お問い合せいただきましたら、３営業日以内に担当よりご連絡いたします。</p>
+              </div>
+
+              <form class="Form">
+              <div class="Form-Item">
+                  <p class="Form-Item-Label"> お問い合わせ内容<span class="Form-Item-Label-Required">必須</span>
+                  </p>
+
+                  <fieldset class="radio-001">
+                    <label>
+                        <input type="radio" name="radio-001" value="お問い合わせ" checked/>
+                        <span>お問い合わせ</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="radio-001" value="資料請求"/>
+                        <span>資料請求</span>
+                    </label>
+                </fieldset>
+              </div>
+              <div class="Form-Item">
+                <p class="Form-Item-Label">お名前<span class="Form-Item-Label-Required">必須</span></p>
+                <input type="text" class="Form-Item-Input" placeholder="例）山田 太郎">
+              </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label">
+                    会社名<span class="Form-Item-Label-Required">必須</span>
+                  </p>
+                  <p class="caution-txt">※業種・業態によってお断りさせていただく場合がございます。</p>
+                  <input type="text" class="Form-Item-Input" placeholder="例）クラウダス株式会社">
+                </div>
+         
+                <div class="Form-Item">
+                  <p class="Form-Item-Label">部署・役職名</p>
+                  <input type="text" class="Form-Item-Input" placeholder="例）営業部 課長">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label">電話番号<span class="Form-Item-Label-Required">必須</span></p>
+                  <input type="text" class="Form-Item-Input" placeholder="例）03-0000-0000">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label">メールアドレス<span class="Form-Item-Label-Required">必須</span></p>
+                  <p class="caution-txt">※フリーメールアドレスは対応しかねますのでご了承ください。</p>
+                  <input type="email" class="Form-Item-Input" placeholder="例）mail@example.com">
+                </div>
+                <div class="Form-Item">
+                  <p class="Form-Item-Label isMsg">お問い合わせ内容</p>
+                  <textarea class="Form-Item-Textarea" placeholder="例）申し込み後、いつから利用可能ですか？"></textarea>
+                </div>
+                <input type="submit" class="Form-Btn" value="送信する">
+              </form>
+          </div>
+      </div>
+  </div>
+  </main>
+  <footer></footer>
+  
+  <script src="./js/slide-logo.js"></script>
+  <script src="./js/scroll-up.js"></script>
+</body>
+</html>
