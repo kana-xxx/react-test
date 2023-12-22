@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クラウダスサイト</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/q&a.css">
+    <!-- Noto Sans CJK JPフォントの読み込み -->
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'rvq3qba',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+</head>
+<body>
+  <header>
+    <div class="header-items">
+      <a href="#">
+      <img class="rogo-img" src="./img/cloudus-rogo.png" alt="クラウダスロゴ">
+      </a>
+      <div class="header-item">
+        <div class="header-lists">
+          <ul>
+            <li><a href="#">クラウダスの機能</a></li>
+            <li><a href="#">導入事例</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="buttons">
+        <div class="header-button contact">
+          <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+          </a>
+        </div>
+        
+          <div class="header-button login">
+            <a href="#"><span>ログインはこちらから</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+            </a>
+          </div>
+      </div>
+    </div>
+      <!--ハンバーガーメニュー-->
+      <div class="responsive-headerMenu">
+        <div class="menu-box">
+        <div class="menu on"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--メガメニュー-->
+  
+  <div class="mega-menu subList js-modal" id="data-user">
+    <div class="page-list">
+    <ul>
+      <li><span>クラウダスの機能</span>
+        <ul>
+          <li><a href="#">受発注システム</a></li>
+          <li><a href="#">配車管理システム</a></li>
+          <li><a href="#">営業支援システム</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="link-title"><span>導入事例</span></a>
+      <li><a href="#" class="link-title"><span>よくある質問</span></a>
+    </ul>
+  </div>
+    <div class="mega-menu-buttons">
+    <div class="mega-menu-button contact">
+      <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+      </a>
+    </div>
+    
+      <div class="mega-menu-button login">
+        <a href="#"><span>ログインはこちらから</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+        </a>
+      </div>
+    </div>
+    <div class="mega-menu-footer">
+      <img href="#" src="/img/cloudus-rogo.png" alt="クラウダスロゴ">
+      <ul class="mega-menu-footer-li">
+        <li><a href="#">運営会社</a></li>
+        <li><a href="#">商標・著作権について</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <p>Copyright © 2022 E-teras inc. All Rights Reserved.</p>
+    </div>
+  </div>
+  </div>
+
+
+    <main>
+        <div class="top-wrapper gray-wrap magin-zero" id="q&a">
+            <div class="headlign">
+              <h2 class="content-ttl">よくある質問</h2>
+              <p class="content-subttl">FAQ</p>
+              <div class="description">
+                <p class="headlign-txt">処理業者様、排出事業者様ごとに<br class="SP">よくある質問をまとめています。</p>
+              </div>
+            </div>
+            <!-- 処理業者・排出事業者button -->
+        <div class="select-buttons">
+            <a href="#syori" class="select-button"><span>処理業者様</span><img src="/img/faq-button.png" alt="v" class="faq-btn"></a>
+            <a href="#haisyutu" class="select-button"><span>排出事業者様</span><img src="/img/faq-button.png" alt="v" class="faq-btn"></a>
+        </div>
+<!-- 処理業者AF -->
+        <div class="container">
+          <section>
+            <h2 class="gyousya" id="syori">処理業者様</h2>
+              <div class="qa">
+                <h3 class="qa-title orange">システム全般について</h3>
+                  <ul class="qa-block">
+                    
+                      <li class="qa-item">
+                          <button class="qa-head js-ac"><span class="question">ソフトをインストールする必要がありますか？</span></button>
+                          <div class="qa-body answer-orange">
+                              ございません。クラウダスはインターネットにつないで利用するサービス（ASPサービス）です。ですので、インターネット環境があれば簡単に導入できます。
+                          </div>
+                      </li>
+                      <li class="qa-item">
+                        <button class="qa-head  js-ac"><span class="question">利用人数によって料金は変わりますか？追加料金はありますか？</span></button>
+                        <div class="qa-body  answer-orange">
+                            ございません。何名使っていただいても、追加料金はございません。
+                        </div>
+                    </li>
+                    <li class="qa-item">
+                      <button class="qa-head  js-ac"><span class="question">取引している処理業者からクラウダスの招待メールが来ました。これを利用するには費用がかかるのですか？</span></button>
+                      <div class="qa-body  answer-orange">
+                          ホスト企業（有料サービスを利用している企業）から招待されたゲスト企業は、クラウダスの利用において費用はかかりません。無料でご利用いただけます。
+                      </div>
+                  </li>
+                  </ul>
+              </div>
+
+              <div class="qa">
+                <h3 class="qa-title blue">受発注管理について</h3>
+                  <ul class="qa-block">
+                    
+                      <li class="qa-item">
+                          <button class="qa-head  js-ac"><span class="question">利用人数によって料金は変わりますか？追加料金はありますか？</span></button>
+                          <div class="qa-body  answer-bulue">
+                              ございません。何名使っていただいても、追加料金はございません。
+                          </div>
+                      </li>
+                      <li class="qa-item">
+                        <button class="qa-head  js-ac"><span class="question">配車管理システムとは違うんですよね？</span></button>
+                        <div class="qa-body  answer-bulue">
+                            はい、違います。クラウダス受発注システムは、電話やFAX、メール等でのお客様との受発注のやり取りを最適化することに特化したシステムです。車両や担当ドライバーを決めるといった配車システムとは異なります。受発注をシステム化することで、各スタッフの受発注業務の低負荷化を実現し、人手不足の解消を図ります。
+
+                              疑問点はお気軽にお問い合わせください。オペレーターからご回答させていただきます。
+                        </div>
+                    </li>
+                    <li class="qa-item">
+                      <button class="qa-head  js-ac"><span class="question">すべての取引先でクラウダスを導入しなければいけませんか？</span></button>
+                      <div class="qa-body  answer-bulue">
+                          そんなことはありません。一部のみのご利用でも結構です。他社では、取引数や回収依頼数が多い先のみクラウダスを導入することで、電話やメールでの差し込み業務、回収依頼業務を効率化している事例はあります。一部の導入だけでも、費用対効果を実感していただいている企業様はいらっしゃいます。
+                      </div>
+                  </li>
+                  <li class="qa-item">
+                    <button class="qa-head  js-ac"><span class="question">他社がすんなり導入してくれるものでしょうか？個人事業主もいるので不安…。</span></button>
+                    <div class="qa-body  answer-bulue">
+                        ご安心ください。
+                          "まるごとサポート”という、取引先にスムーズに導入いただくためのサポートをご用意しております。導入先への操作説明やシステム設定をイーテラスが全て行います。「今すぐ、簡単に、他の業務を変えることなく」導入ができ、負荷がかからないのがクラウダスのメリットです。
+                    </div>
+                </li>
+                <li class="qa-item">
+                  <button class="qa-head  js-ac"><span class="question">本当に人手不足を解消や人件費の削減ができるのですか？</span></button>
+                  <div class="qa-body  answer-bulue">
+                      属人的な管理は、人も時間も要します。クラウダスでシステム化することで、それらを数クリックで完了させ、必要最低限に減らします。
+                        【例】配車数：30車/日　 人件費：2,000円/時間<br>
+                        1依頼当たりの業務時間：10分（受注対応、記録管理、情報共有）の場合<br>
+                        ➡月額20万円と月100時間かかっていた業務が、システムを数クリック操作するだけで完了します。
+                  </div>
+              </li>
+              <li class="qa-item">
+                <button class="qa-head  js-ac"><span class="question">なぜ、顧客の囲い込みができるのですか？</span></button>
+                <div class="qa-body  answer-bulue">
+                    顧客の最も求める“利便性“で他社を圧倒的に突き放すことができるからです。クラウダスは、排出事業者にとっても、発注業務の効率化や依頼情報の正確性の向上等、廃棄物管理業務を行う上でメリットがあります。これらのメリットが他業者へ切り替えるときの障壁となります。また、回収状況の履歴より、定期的な回収依頼・量を確認することができるため、営業マンの解約防止活動に利用することが可能になります。
+                </div>
+            </li>
+            <li class="qa-item">
+              <button class="qa-head  js-ac"><span class="question">ホストとして利用する際、どれくらいの期間で導入が完了しますか？</span></button>
+              <div class="qa-body  answer-bulue">
+                  排出事業者様の導入数等にもよりますが、今までの実績からみると1～3ヵ月で導入が完了し、運用がスタートできます。
+              </div>
+          </li>
+          <li class="qa-item">
+            <button class="qa-head  js-ac"><span class="question">自分の担当以外の回収依頼の通知メールをオフにすることはできますか？通知メールが多くなると見落としてしまいそう。</span></button>
+            <div class="qa-body  answer-bulue">
+                可能です。設定でメール通知のオン・オフ機能があるので自由に設定していただけます。
+            </div>
+        </li>
+                  </ul>
+              </div>
+
+              <div class="qa">
+                <h3 class="qa-title green">配車管理について</h3>
+                  <ul class="qa-block">
+                    
+                      <li class="qa-item">
+                          <button class="qa-head  js-ac"><span class="question">クラウダスの配車管理の特徴は何ですか？</span></button>
+                          <div class="qa-body  answer-green">
+                              「ドラッグ&ドロップ」でスムーズに配車組みをすることができる点です。クラウダスの受発注とも連携しているため、クラウダスでのオーダーがあれば、配車管理へ自動でオーダーが反映され、スケジューリングすることができます。従来の電話やメールで受けた回収依頼Excelに書き写すといった作業がなくなります。また、クラウダスを利用していないお客様から回収依頼が来た場合でも、配車管理上に、事前に登録している該当の会社の回収品目をテンプレートから選択するだけで完結します。
+                          </div>
+                      </li>
+                      <li class="qa-item">
+                        <button class="qa-head  js-ac"><span class="question">利用人数によって料金は変わりますか？追加料金はありますか？</span></button>
+                        <div class="qa-body  answer-green">
+                            ございません。何名使っていただいても、追加料金はございません。
+                        </div>
+                    </li>
+                  </ul>
+              </div>
+
+              <div class="qa">
+                <h3 class="qa-title pink">営業支援 (SFA) について</h3>
+                  <ul class="qa-block">
+                      <li class="qa-item">
+                        <button class="qa-head  js-ac"><span class="question">利用人数によって料金は変わりますか？追加料金はありますか？</span></button>
+                        <div class="qa-body  answer-pink">
+                            ございません。何名使っていただいても、追加料金はございません。
+                        </div>
+                    </li>
+                  </ul>
+              </div>
+              
+          </section>
+          </div>
+
+<!-- 排出業者AF -->
+        <div class="container">
+          <section>
+            <h2 class="gyousya haisyutu" id="haisyutu">排出業者様</h2>
+              <div class="qa">
+                <h3 class="qa-title orange">システム全般について</h3>
+                  <ul class="qa-block">
+                    
+                      <li class="qa-item">
+                          <button class="qa-head  js-ac"><span class="question">ソフトをインストールする必要がありますか？</span></button>
+                          <div class="qa-body  answer-orange">
+                              ございません。クラウダスはインターネットにつないで利用するサービス（ASPサービス）です。ですので、インターネット環境があれば簡単に導入できます。
+                          </div>
+                      </li>
+                      <li class="qa-item">
+                        <button class="qa-head  js-ac"><span class="question">利用人数によって料金は変わりますか？追加料金はありますか？</span></button>
+                        <div class="qa-body  answer-orange">
+                            ございません。何名使っていただいても、追加料金はございません。
+                        </div>
+                    </li>
+                  </ul>
+              </div>
+
+              <div class="qa">
+                <h3 class="qa-title blue">受発注管理について</h3>
+                  <ul class="qa-block">
+                    
+                      <li class="qa-item">
+                          <button class="qa-head  js-ac"><span class="question">取引している排出事業者からクラウダスの招待メールが来ました。これを利用するには費用がかかるのですか？</span></button>
+                          <div class="qa-body  answer-bulue">
+                              ホスト企業（有料サービスを利用している企業）から招待されたゲスト企業は、クラウダスの利用において費用はかかりません。無料でご利用いただけます。
+                          </div>
+                      </li>
+                      <li class="qa-item">
+                        <button class="qa-head  js-ac"><span class="question">無料と有料で、利用においてどのような違いがあるのですか？</span></button>
+                        <div class="qa-body  answer-bulue">
+                            有料の『ホスト企業』になることで、取引先の全てとクラウダス上で受発注のやり取りが可能になります。また、便利機能も利用できます。
+                              無料の『ゲスト企業』の場合、クラウダスの利用が招待をもらった相手との取引のみに限定されます。
+                        </div>
+                    </li>
+                    <li class="qa-item">
+                      <button class="qa-head  js-ac"><span class="question">取引先の受発注を全てクラウダスで行うには有料サービスに申込めばいいのですか？</span></button>
+                      <div class="qa-body  answer-bulue">
+                          はい、有料サービスをご利用いただくと、ホスト企業として全てのパターンをクラウダスで行うことが可能になります。
+                      </div>
+                  </li>
+                  </ul>
+              </div>
+              
+          </section>
+          </div>
+    </main>
+    <footer></footer>
+    <script src="./js/humburgerMenu.js"></script>
+    <script src="/js/ac.js"></script>
+</body>
