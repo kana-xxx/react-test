@@ -118,7 +118,7 @@
 }
 .department {
     display: inline-block;
-    margin: 0 16.2rem 0.38rem 0 ; 
+    margin: 0 0 0.38rem 0 ; 
     padding: .4rem .8rem;
     color: white;
     font-size: .9rem;
@@ -127,14 +127,21 @@
     text-wrap: nowrap;
     border-radius: .25rem;
     letter-spacing: .2rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center; 
 }
+.department span{
+    text-align: center;
+}
+
+
 /* 受発注マーク部分 */
 .order {
     background-color: #4BBFEB;
 }
 .order span {
     letter-spacing: 0.2em;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -178,12 +185,13 @@
     font-size: 1.25rem;
     color: #87888b;
     margin-top: 1rem;
-    display: inline-block;
+    text-align: left;
 }
 .company-intro {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
+    text-align: left;
 }
 
 
@@ -223,8 +231,9 @@
     }
     .department {
         font-size: 0.625rem;
-        margin: 0 1.625rem 0.2rem 0 ; 
+        margin: 0 0 0.2rem 0 ; 
         padding:0.25rem 0.63rem 0.3rem;
+        width: 5rem;
     }
     /* TODOロゴの明瞭さ確認（大きさで変わるか） */
     .company-logo img {
@@ -236,6 +245,7 @@
     .company-name {
         font-size: .8rem;
         margin-top: 0.5rem;
+        text-align: left;
     }
     .company-intro {
         font-size: 0.88rem;
@@ -253,9 +263,6 @@
     .cloudus-headlign-txt-sma {
         display: block;
     }    
-    .breadcrumbs {
-        margin: 0 1.31rem;
-    }
     .category-select{
         padding: 1rem;
         height: 12rem;
@@ -291,8 +298,9 @@
     }
     .department {
         font-size: .9rem;
-        margin: 0 1rem .5rem 0; 
+        margin: 0 0 .5rem 0; 
         padding: .35rem .75rem;
+        width: 7rem;
     }
     .company-logo img {
         width: 9rem;
@@ -326,7 +334,8 @@
     border-radius: 1.25rem 1.25rem 0 0;
 }
 .department {
-    margin: 1rem 1.88rem 0.38rem 0 ; 
+    margin: 0 0 0.38rem 0 ; 
+    width: 6.5rem;
 }
 /* 共通部分 */
 .company-logo { 
@@ -344,6 +353,7 @@
 .company-name {
     font-size: 0.9rem;
     margin-top: 1rem;
+    text-align: left;
 }
 .company-intro  {
     font-size: 1.25rem;

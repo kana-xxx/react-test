@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>クラウダスサイト</title>
+      <!-- ファビコン -->
+  <link rel="apple-touch-icon" href="img/favicon-180×180.png" sizes="180x180"> 
+  <link rel="apple-touch-icon" href="img/favicon-150×150.png" sizes="150x150">
+  <link rel="shortcut icon" href="img/ico-faviocon.ico" sizes="any" type="image/svg+xml">
+  <link rel="icon" href="svg-favicon.svg" >
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="./css/layout.css">
@@ -96,8 +102,21 @@
 
 
     <main>
-        <div class="top-wrapper gray-wrap magin-zero" id="q&a">
-            <div class="headlign">
+      <div class="outer-second">
+      <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="#"><span itemprop="name">トップ</span>
+              </a>
+              <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+              <a itemprop="item"><span itemprop="name">よくある質問</span>
+              </a>
+              <meta itemprop="position" content="2" />
+          </li>   
+      </ul>
+        <div class="wrapper-second" id="q&a">
+            <div class="headlign text-fade ">
               <h2 class="content-ttl">よくある質問</h2>
               <p class="content-subttl">FAQ</p>
               <div class="description">
@@ -105,15 +124,15 @@
               </div>
             </div>
             <!-- 処理業者・排出事業者button -->
-        <div class="select-buttons">
+        <div class="select-buttons text-fade ">
             <a href="#syori" class="select-button"><span>処理業者様</span><img src="/img/faq-button.png" alt="v" class="faq-btn"></a>
             <a href="#haisyutu" class="select-button"><span>排出事業者様</span><img src="/img/faq-button.png" alt="v" class="faq-btn"></a>
         </div>
 <!-- 処理業者AF -->
         <div class="container">
           <section>
-            <h2 class="gyousya" id="syori">処理業者様</h2>
-              <div class="qa">
+            <h2 class="gyousya text-fade " id="syori">処理業者様</h2>
+              <div class="qa text-fade ">
                 <h3 class="qa-title orange">システム全般について</h3>
                   <ul class="qa-block">
                     
@@ -138,7 +157,7 @@
                   </ul>
               </div>
 
-              <div class="qa">
+              <div class="qa scroll-up">
                 <h3 class="qa-title blue">受発注管理について</h3>
                   <ul class="qa-block">
                     
@@ -199,7 +218,7 @@
                   </ul>
               </div>
 
-              <div class="qa">
+              <div class="qa scroll-up">
                 <h3 class="qa-title green">配車管理について</h3>
                   <ul class="qa-block">
                     
@@ -218,7 +237,7 @@
                   </ul>
               </div>
 
-              <div class="qa">
+              <div class="qa scroll-up">
                 <h3 class="qa-title pink">営業支援 (SFA) について</h3>
                   <ul class="qa-block">
                       <li class="qa-item">
@@ -236,8 +255,8 @@
 <!-- 排出業者AF -->
         <div class="container">
           <section>
-            <h2 class="gyousya haisyutu" id="haisyutu">排出業者様</h2>
-              <div class="qa">
+            <h2 class="gyousya haisyutu text-fade " id="haisyutu">排出業者様</h2>
+              <div class="qa text-fade ">
                 <h3 class="qa-title orange">システム全般について</h3>
                   <ul class="qa-block">
                     
@@ -256,7 +275,7 @@
                   </ul>
               </div>
 
-              <div class="qa">
+              <div class="qa scroll-up">
                 <h3 class="qa-title blue">受発注管理について</h3>
                   <ul class="qa-block">
                     
@@ -285,7 +304,30 @@
           </section>
           </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-pagelinks">
+        <ul>
+          <li><a href="#">クラウダスの機能</a></li>
+          <li><a href="#">導入事例</a></li>
+          <li><a href="#">よくある質問</a></li>
+        </ul>
+      </div>
+      <a href="#" class="footer-rogo">
+        <img src="/img/cloudus-rogo.png" alt="CLOUDUSロゴ" >
+      </a>
+      <div class="corporate-info">
+        <ul>
+          <li><a href="#">運営会社</a></li> 
+          <li><a href="#">商標・特許・著作権について</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+        </ul>
+        <div class="copylight">Copyright © 2023 E-teras inc. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script src="./js/humburgerMenu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./js/humburgerMenu.js"></script>
     <script src="/js/ac.js"></script>
+    <script src="./js/header-margin.js"></script>
+    <script src="./js/scroll-up.js"></script>
 </body>

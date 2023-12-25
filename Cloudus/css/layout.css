@@ -128,7 +128,7 @@ a{
     column-gap: 1.25rem;
     align-items: center;
     justify-content: center;
-    padding-bottom: 6rem;
+    padding-top: 4rem;
 }
 .page-numbers{
     display: flex;
@@ -157,9 +157,46 @@ a{
     cursor: pointer;
 }
 
+@media all and (max-width : 1024px)  {
+.page-nation{
+    column-gap: 0.8rem;
+}
+.page-numbers{
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1rem;
+}
+}
+@media all and (max-width : 599px) {
+    .page-nation{
+        column-gap: 0.8rem;
+        padding-bottom: 0;
+    }
+    .page-numbers{
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1rem;
+    }
+    .headlign-txt-second.medium {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1600px)  {
+
+    .page-nation {
+        column-gap: 1rem;
+    }
+    .page-numbers {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.2rem;
+    }
+}
+
 /* パンくずリスト */
 .breadcrumbs {
-    margin: 0 10rem;
+    padding: 2rem 17rem;
     padding: 1.25rem 0;
     list-style: none;
     display: flex;
@@ -167,6 +204,8 @@ a{
     align-items: center;
     background: none;
     font-size: 1rem;
+    flex-wrap: wrap;
+    line-height: 1.5;
 }
 .breadcrumbs li {
     display: inline;
@@ -184,6 +223,46 @@ a{
 }
 
 
+@media (min-width: 1025px) and (max-width: 1600px)  {
+    .breadcrumbs {
+        padding: 1.8rem 13rem;
+        font-size: 0.8rem;
+    }
+    .breadcrumbs li {
+        display: inline;
+        list-style: none;
+    }
+    .breadcrumbs :not(:first-child)::before{
+        content: '>';
+        margin: 0.4rem;
+    }
+    .breadcrumbs li a:hover {
+        opacity:0.5
+    }
+    .breadcrumbs li:last-of-type a:hover { 
+        opacity:1;
+    }
+}
+
+@media all and (max-width : 1024px)  {
+    .breadcrumbs {
+        padding: 2rem 3.75rem;
+        font-size: .6rem;
+    }
+
+    .breadcrumbs :not(:first-child)::before {
+        margin: 0.313rem;
+    }
+
+}
+
+@media all and (max-width : 599px)  {
+    .breadcrumbs  {
+        padding: 1rem 1.8rem;
+        font-size: .7rem;
+    }
+}
+
 /* ヘッダー*/
 header{
     width: 100%;
@@ -196,6 +275,7 @@ header{
     padding:0.6em 1.25em;
     
 }
+
 
 .header-items{
     display: flex;
@@ -271,7 +351,7 @@ header{
 }
 /* mainボタンスタイル */
 .button{
-    display: inline-block;
+    display: block;
     border-radius: 1.2rem ;
     color: #fff;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
@@ -279,14 +359,14 @@ header{
     width: 30rem;
     align-items: center;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 .button a{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    column-gap: 1rem;
     padding: 1.5rem 2.5em;
     font-family: "noto-sans-cjk-jp", sans-serif;
     font-weight: 700;
@@ -475,6 +555,11 @@ footer{
     }
 }
 
+@media (min-width: 1025px) and (max-width: 1600px){
+.wrapper-second {
+    padding: 2rem 13rem 4rem;
+}
+}
 
 @media all and (max-width : 1024px)  {
 
@@ -571,7 +656,7 @@ footer{
 }
 
     .mega-menu{
-        padding: 8.125em 4.375em 9.625em 4.375em;
+        padding: 4rem 4.375em 9.625em 4.375em;
         position: fixed;
         z-index: 999;
         overflow: scroll;
@@ -649,7 +734,7 @@ footer{
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-        padding: 1.3em 2.5em;
+        padding: 1.3rem 2.5rem;
         font-family: "noto-sans-cjk-jp", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -676,9 +761,9 @@ footer{
     /*ジャバスクリプト ハンバーガー*/
 .responsive-headerMenu {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    /* padding: 0.5rem 0.5rem 0.5rem 1rem; */
     background-color: #ff8900;
     width: 4.1rem;
     height: 4.1rem;
@@ -692,7 +777,7 @@ footer{
     }
 
     .menu{
-        width: 3rem;
+        width: 2.5rem;
         height: 1.5rem;
         cursor: pointer;
         z-index: 10;
@@ -706,7 +791,7 @@ footer{
 
 .menu.on span {
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     display: block;
     position: absolute;
     background: #fff;
@@ -760,11 +845,15 @@ footer{
 
 .button{
     width: 18.125rem;
-    border-radius: 1.1rem;
+    border-radius: .9rem;
 }
 
 .button a{
-    padding: 1.1em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1.3rem 2rem;
 }
 
 .contact-top{
@@ -787,8 +876,12 @@ footer{
 .footer-pagelinks{
     margin-top: 3.5rem;
 }
-
+.footer-pagelinks ul {
+    row-gap: .7rem;
+}
 .footer-pagelinks li{
+    display: inline-block;
+    border-left: 0.0625rem solid #35383e;
     font-size: 0.75rem;
     padding: 0 0.625rem;
 }
@@ -803,7 +896,7 @@ footer{
 }
 
 .corporate-info li{
-    padding: 0.5rem 0;
+    padding: 0.25rem 0;
 
 }
 
@@ -829,7 +922,7 @@ footer{
         padding-bottom: 3.75rem;
     }
     .wrapper-second {
-        padding: 3.5rem 1.8rem 1.75em;
+        padding: 3.5rem 1.8rem 4rem;
     }
 
     .headlign {
@@ -843,7 +936,7 @@ footer{
     }
     .content-subttl {
         color: #00A5E3;
-        font-size: .5rem;
+        font-size: .8rem;
         line-height: 1.7;
     }
     .headlign-txt {
@@ -854,5 +947,69 @@ footer{
     }
     .headlign-txt-second {
         margin-top: 1.25rem;
+        text-align: center;
+    }
+    .mega-menu{
+        padding: 3.5rem 2rem 9.625em;
+        position: fixed;
+        z-index: 999;
+        overflow: scroll;
+    }
+    .button a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 0rem;
+    }
+    .footer-pagelinks ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-pagelinks li{
+        border-left: none;
+        font-style: normal;
+        font-size: .9rem;
+    }
+    .corporate-info{
+        font-size: .9rem;
+        margin-top: 1rem;
+    
+    }
+    .footer-pagelinks{
+        margin-top: 3rem;
+    }
+    .copylight {
+        font-size: .75rem;
+    }
+    .contact-top{
+        margin-top: 4rem;
     }
 }
+
+/* スクロールでふわっと表示されるアニメーション */
+.scroll-up {
+    transition: 0.7s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+    will-change: transform;
+  }
+  .scroll-up.on {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* その場でふわっと表示されるアニメーション */
+.text-fade {
+    animation-name: fadein;
+    animation-duration: 1s;
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
+      transform: translatey(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }

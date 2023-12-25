@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/works.css">
     <link rel="stylesheet" href="./css/third-works.css">
 <!-- Noto Sans CJK JPフォントの読み込み -->
 <script>
@@ -28,10 +29,82 @@
 </script>
 </head>
 <body>   
-    <header></header>
+    <header id="header">
+        <div class="header-items">
+          <a href="#">
+          <img class="rogo-img" src="./img/cloudus-rogo.png" alt="クラウダスロゴ">
+          </a>
+          <div class="header-item">
+            <div class="header-lists">
+              <ul>
+                <li><a href="#">クラウダスの機能</a></li>
+                <li><a href="#">導入事例</a></li>
+                <li><a href="#">よくある質問</a></li>
+              </ul>
+            </div>
+            <div class="buttons">
+            <div class="header-button contact">
+              <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+              </a>
+            </div>
+            
+              <div class="header-button login">
+                <a href="#"><span>ログインはこちらから</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+                </a>
+              </div>
+          </div>
+        </div>
+          <!--ハンバーガーメニュー-->
+          <div class="responsive-headerMenu">
+            <div class="menu-box">
+            <div class="menu on"><span></span><span></span><span></span></div>
+            </div>
+          </div>
+        </div>
+      </header>
     
+    <!--メガメニュー-->
+    
+    <div class="mega-menu subList js-modal" id="data-user">
+        <div class="page-list">
+        <ul>
+          <li><span>クラウダスの機能</span>
+            <ul>
+              <li><a href="#">受発注システム</a></li>
+              <li><a href="#">配車管理システム</a></li>
+              <li><a href="#">営業支援システム</a></li>
+            </ul>
+          </li>
+          <li><a href="#" class="link-title"><span>導入事例</span></a>
+          <li><a href="#" class="link-title"><span>よくある質問</span></a>
+        </ul>
+      </div>
+        <div class="mega-menu-buttons">
+        <div class="mega-menu-button contact">
+          <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+          </a>
+        </div>
+        
+          <div class="mega-menu-button login">
+            <a href="#"><span>ログインはこちらから</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+            </a>
+          </div>
+        </div>
+        <div class="mega-menu-footer">
+          <img href="#" src="/img/cloudus-rogo.png" alt="クラウダスロゴ">
+          <ul class="mega-menu-footer-li">
+            <li><a href="#">運営会社</a></li>
+            <li><a href="#">商標・著作権について</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
+          <p>Copyright © 2022 E-teras inc. All Rights Reserved.</p>
+        </div>
+      </div>
+      </div>
+      
+
 <main>
-    <!--パンくずリスト  -->
+    <!--パンくずリスト  -->    
 <div class="outer-second">
     <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
@@ -50,22 +123,21 @@
             <meta itemprop="position" content="3" />
         </li>   
     </ul>
-<div class="outer-second">
 <div class="wrapper-second function-wrapper">
     <div class="content-second function-content">
-        <div class="headlign headlign-works">
+        <div class="headlign headlign-works text-fade ">
             <h2 class="content-ttl works-ttl">導入事例</h2>
             <p class="content-subttl wroks-subttl">CASE STUDY</p>
         </div>
         <div class="article-container">
-            <div class="ttl-box">
+            <div class="ttl-box text-fade ">
                 <ul class="tag-container">
                 <li class="department department-tag order">受発注</li>
             </ul>
             <p class="article-ttl">営業活動の見える化で、チームで情報を共有</p>
             </div>
 
-            <div class="article-cat">
+            <div class="article-cat text-fade">
                 <img class="cat-img" src="./img/jirei-kohei.png" alt="事例記事写真">
                 <div class="cat-detail">
                     <div class="cat-detail-wrapper">
@@ -79,21 +151,28 @@
             </div>
 
         <div class="article-box">
+            <div class="text-fade">
                 <h2>個人の手元で情報が止まってしまうともったいない</h2>
                 <p>
                     <専務取締役 佐竹 武人 様><br>
                     <span>少数精鋭で営業を行っているのですが、どうしても属人的になり、個人の手元に情報が残ってしまいます。</span>例えば、成約に至らなかった案件のプロセスが分からず、次回に活かすための分析ができなかったり…。また、現在動いているものがいつ契約して、いつから回収なのかといった進捗状況が分からず困ったこともありました。特にうちは春に入札の案件が集中するのですが、営業が個人で管理していると、どの案件がどれくらい進んでいるのかが外から見て分かりません。そういった情報をきちんと見える化しないといけないと感じていました。
                 </p>
+            </div>
+            <div class="scroll-up">
                 <h2>全体の流れを掴めるように情報を残す</h2>
                 <p>
                     <佐竹 武人 様><br>
                     見える化するために、営業活動aの内容を記入して、管理者が確認・承認するサービスなど、いろいろなツールを使ってはいました。しかし管理者だけしか情報を見られなかったり、全体としての流れが見えないといった問題がありました。 これからは<span>チームで動いていく方針のため、チーム全体で営業活動が見えるようにしたかったことと、一部の内容だけでなく、一つの案件でも全体の流れが分かるようにしたかったことから、クラウダスを検討しました。</span>
                 </p>
+                </div>
+                <div class="scroll-up">
                 <h2>業界に特化したシンプルな作り</h2>
                 <p>
                     <佐竹 武人 様><br>
                     SFAを以前にいくつか検討したことがあるのですが、機能が多すぎて使いこなせないんですよね（笑） いろいろなことができすぎてしまう分、果たして社内のみんなが使えるのかを考えると厳しい部分がありました。その点、<span>クラウダスは産廃業界に特化していて、かつシステムの作りがシンプルなので、まずは使ってみようと導入に至りました。</span>
                 </p>
+                </div>
+                <div class="scroll-up">
                 <h2>案件の進捗が一目で分かる</h2>
                 <p>
                     <佐竹 武人 様>
@@ -109,73 +188,98 @@
                         事例掲載にご協力いただきまして、誠にありがとうございました。<br><br>
                         
                         今後もクラウダスは、利用者の皆さまの声を反映し、進化をし続けます。</p>
-        </div>
-<div class="article-other">
+        </div></div>
+<div class="article-other scroll-up">
     <p class="ttl">その他の導入事例を見る</p>
-        <div class="inwrapper">
-            <div class="inwrapper-box">
-                <a href="#">
-                    <span class="company-img">
-                        <img src="img/jirei-kohei.png">
+    <div class="inwrapper scroll-up">
+        <div class="inwrapper-box">
+            <a href="#">
+                <div class="company-img">
+                    <img src="img/jirei-kohei.png">
+                </div>
+                <div class="inwrapper-box-company">
+                    <span class="department order">受発注</span>
+                    <span class="company-logo">
+                        <img src="img/kohei_logo.svg">
                     </span>
-                        <span class="department order">受発注</span>
-                    <div class="inwrapper-box-company">
-                        <span class="company-logo">
-                            <img src="img/kohei_logo.svg">
-                        </span>
-                        <div class="hr"></div>
-                        <p class="company-name">株式会社江栄</p>
-                        </span>
-                            <p class="company-intro">営業活動の見えるで、チームで情報を共有</p>
-                    </div> 
-                </a>
-            </div>
-            <div class="inwrapper-box">
-                <a href="#">
-                    <span class="company-img">
-                        <img src="img/jirei-moc.png">
+                    <div class="hr"></div>
+                    <p class="company-name">株式会社江栄</p>
                     </span>
-                        <span class="department dispatch-control">配車管理</span>
-                    <div class="inwrapper-box-company">
-                        <span class="company-logo">
-                            <img src="img/moc_logo.svg">
-                        </span>
-                        <div class="hr"></div>
-                        <p class="company-name">株式会社M.O.C</p>
-                        </span>
-                            <p class="company-intro">「御社にしかメリットないでしょ？」を覆す 排出事業者も納得のクラウダスのメリット</p>
-                    </div> 
-                </a>
-            </div>
-            <div class="inwrapper-box">
-                <a href="#">
-                    <span class="company-img">
-                        <img src="img/jirei-earthsupport.png">
-                    </span>
-                        <span class="department sales-support">営業支援</span>
-                    <div class="inwrapper-box-company">
-                        <span class="company-logo earthsupport-logo">
-                            <img src="img/earthsupport_logo.svg">
-                        </span>
-                        <div class="hr"></div>
-                        <p class="company-name">アースサポート株式会社</p>
-                        </span>
-                            <p class="company-intro">新型コロナによるテレワーク推奨、 ネックになった膨大な電話量を減らすには？</p>
-                    </div> 
-                </a>
-            </div>
+                        <p class="company-intro">営業活動の見えるで、チームで情報を共有</p>
+                </div> 
+            </a>
         </div>
+        <div class="inwrapper-box">
+            <a href="#">
+                <div class="company-img">
+                    <img src="img/jirei-moc.png">
+                </div>
+                <div class="inwrapper-box-company">
+                    <span class="department dispatch-control">配車管理</span>
+                    <span class="company-logo">
+                        <img src="img/moc_logo.svg">
+                    </span>
+                    <div class="hr"></div>
+                    <p class="company-name">株式会社M.O.C</p>
+                    </span>
+                        <p class="company-intro">「御社にしかメリットないでしょ？」を覆す 排出事業者も納得のクラウダスのメリット</p>
+                </div> 
+            </a>
+        </div>
+        <div class="inwrapper-box">
+            <a href="#">
+                <div class="company-img">
+                    <img src="img/jirei-earthsupport.png">
+                </div>
+                <div class="inwrapper-box-company">
+                    <span class="department sales-support">営業支援</span>
+                    <span class="company-logo earthsupport-logo">
+                        <img src="img/earthsupport_logo.svg">
+                    </span>
+                    <div class="hr"></div>
+                    <p class="company-name">アースサポート株式会社</p>
+                    </span>
+                        <p class="company-intro">新型コロナによるテレワーク推奨、 ネックになった膨大な電話量を減らすには？</p>
+                </div> 
+            </a>
+        </div>
+
     </div>
+    </div>
+    <div class="button contact contact-top scroll-up">
+        <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+        </a>
+      </div>
     </div>
     </div>
 </div>
 
 </main>
- 
-    <footer></footer>
-    
+<footer>
+    <div class="footer-pagelinks">
+      <ul>
+        <li><a href="#">クラウダスの機能</a></li>
+        <li><a href="#">導入事例</a></li>
+        <li><a href="#">よくある質問</a></li>
+      </ul>
+    </div>
+    <a href="#" class="footer-rogo">
+      <img src="/img/cloudus-rogo.png" alt="CLOUDUSロゴ" >
+    </a>
+    <div class="corporate-info">
+      <ul>
+        <li><a href="#">運営会社</a></li> 
+        <li><a href="#">商標・特許・著作権について</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <div class="copylight">Copyright © 2023 E-teras inc. All Rights Reserved.</div>
+    </div>
+  </footer>
+  <script src="./js/humburgerMenu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="./js/slide-logo.js"></script>
     <script src="./js/scroll-up.js"></script>
-    <script src="./js/category-tab.js"></script>
+    <script src="./js/category-tab.js"></script>    
+    <script src="./js/header-margin.js"></script>
 </body>
 </html>

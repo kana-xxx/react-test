@@ -6,9 +6,12 @@
 .SP{
     display: none;
 }
-
+.select-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .select-button{
-    display: inline-block;
     width: 15.625rem;
     background-color: #fff;
     box-shadow: 3px 3px 6px rgba(0, 0, 0,0.2);
@@ -17,18 +20,19 @@
     font-family: "noto-sans-cjk-jp", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin: 0.6rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .select-button span{
-    display: inline-block;
     margin-right: 0.8rem;
 }
 
 .faq-btn{
-  width: 1.3rem;
-  height: 0.8rem;
-  margin-bottom: 0.2rem;
+  margin-top: .25rem;
+  width: .8rem;
 }
 
 .container{
@@ -40,6 +44,7 @@
     font-size: 1.625rem;
     padding-top: 150px; /* 調整したい高さ（固定ヘッダーの高さ） */
     margin-top: -150px;
+    text-align: center;
 }
 
 .qa{
@@ -325,12 +330,14 @@
     }
 
     .select-button{
+      width: 13rem;
         font-size: 1rem;
         border-radius: 10px;
+        padding: 1.3rem 2rem;
     }
+   
     .faq-btn{
-      width: 1rem;
-      height: 0.6rem;
+      width: .8rem;
       margin-bottom: 0.1rem;
     }
 
@@ -465,7 +472,9 @@
     .SP{
         display: block;
     }
-
+    .select-buttons {
+      flex-direction: column;
+    }
     .select-button{
         padding: 1.2rem 2rem;
         font-size: 1rem;
@@ -477,8 +486,7 @@
     }
 
     .faq-btn{
-      width: 1rem;
-      height: 0.6rem;
+      width: .8rem;
       margin-bottom: 0.1rem;
     }
     .container{
@@ -493,7 +501,8 @@
     }
 
     .haisyutu{
-        margin-top: 5em;
+        margin-top: 0rem;
+        padding-top: 80px;
     }
 
     .qa{

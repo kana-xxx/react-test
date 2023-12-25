@@ -115,14 +115,14 @@
   @media screen and (max-width: 1024px) {
     .Form-Item-Label-Required {
         margin-left: 15px;
-        padding-top: 5px;
-        padding-bottom: 6px;
-        width: 3.8rem;
+        padding-top: 4px;
+        padding-bottom: 5px;
+        width: 2.9rem;
         display: inline-block;
         text-align: center;
         background: #00A5E3;
         color: #fff;
-        font-size: .8rem;
+        font-size: .75rem;
         font-weight: normal;
       }
 

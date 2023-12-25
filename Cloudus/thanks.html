@@ -28,42 +28,115 @@
   </script>
 </head>
 <body>
-  <header></header>
+  <header id="header">
+    <div class="header-items">
+      <a href="#">
+      <img class="rogo-img" src="./img/cloudus-rogo.png" alt="クラウダスロゴ">
+      </a>
+      <div class="header-item">
+        <div class="header-lists">
+          <ul>
+            <li><a href="#">クラウダスの機能</a></li>
+            <li><a href="#">導入事例</a></li>
+            <li><a href="#">よくある質問</a></li>
+          </ul>
+        </div>
+        <div class="buttons">
+        <div class="header-button contact">
+          <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+          </a>
+        </div>
+        
+          <div class="header-button login">
+            <a href="#"><span>ログインはこちらから</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+            </a>
+          </div>
+      </div>
+    </div>
+      <!--ハンバーガーメニュー-->
+      <div class="responsive-headerMenu">
+        <div class="menu-box">
+        <div class="menu on"><span></span><span></span><span></span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+        <!--メガメニュー-->
+    
+        <div class="mega-menu subList js-modal" id="data-user">
+          <div class="page-list">
+          <ul>
+            <li><span>クラウダスの機能</span>
+              <ul>
+                <li><a href="#">受発注システム</a></li>
+                <li><a href="#">配車管理システム</a></li>
+                <li><a href="#">営業支援システム</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="link-title"><span>導入事例</span></a>
+            <li><a href="#" class="link-title"><span>よくある質問</span></a>
+          </ul>
+        </div>
+          <div class="mega-menu-buttons">
+          <div class="mega-menu-button contact">
+            <a href="#"><span>資料請求・お問い合わせ</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+            </a>
+          </div>
+          
+            <div class="mega-menu-button login">
+              <a href="#"><span>ログインはこちらから</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+              </a>
+            </div>
+          </div>
+          <div class="mega-menu-footer">
+            <img href="#" src="/img/cloudus-rogo.png" alt="クラウダスロゴ">
+            <ul class="mega-menu-footer-li">
+              <li><a href="#">運営会社</a></li>
+              <li><a href="#">商標・著作権について</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+            <p>Copyright © 2022 E-teras inc. All Rights Reserved.</p>
+          </div>
+        </div>
+        </div>
   <main>
-    <!--パンくずリスト  -->
-    <div class="outer-second">
-      <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="#"><span itemprop="name">トップ</span>
-              </a>
-              <meta itemprop="position" content="1" />
-          </li>
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a itemprop="item"><span itemprop="name">お問い合わせ</span>
-              </a>
-              <meta itemprop="position" content="2" />
-          </li>   
-          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-              <a itemprop="item"><span itemprop="name">送信完了</span>
-              </a>
-              <meta itemprop="position" content="3" />
-          </li>   
-      </ul>
+    <!--パンくずリスト  -->  
 <!--第二階層・第三階層  -->
 <div class="outer-second">
+  <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item" href="#"><span itemprop="name">トップ</span>
+        </a>
+        <meta itemprop="position" content="1" />
+    </li>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item"><span itemprop="name">お問い合わせ</span>
+        </a>
+        <meta itemprop="position" content="2" />
+    </li>   
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a itemprop="item"><span itemprop="name">送信完了</span>
+        </a>
+        <meta itemprop="position" content="3" />
+    </li>   
+</ul>
       <div class="wrapper-second function-wrapper">
           <div class="content-second function-content">
-              <div class="headlign headlign-cloudus">
+              <div class="headlign headlign-cloudus text-fade ">
                   <h2 class="content-ttl cloudus-ttl">お問い合わせ</h2>
                   <p class="content-subttl cloudus-subttl">CONTACT</p>
                   <p class="headlign-txt headlign-txt-second cloudus-headlign-txt medium">お問い合わせを受け付けました。</p>
               </div>
               <div class="tanks-content">
-              <img class="thanksImg" src="./img/thanks-icon.svg" alt="">
-              <p class="thanksTxt">
+              <img class="thanksImg text-fade " src="./img/thanks-icon.svg" alt="">
+              <p class="thanksTxt text-fade ">
                 お問い合わせ・お申し込みをいただきありがとうございます。<br>
                 自動返信メールをお送りいたしましたので、ご確認ください。<br><br>
                 お急ぎの場合はお電話(0120-506-381)にてご連絡ください。</p>
+                <div class="button contact contact-top scroll-up">
+                  <a href="#"><span>トップへ戻る</span><img src="/img/botton-yajirusi.png" class="btn-yajirusi">
+                  </a>
+                </div>
             </div>
 
          
@@ -71,9 +144,30 @@
       </div>
   </div>
   </main>
-  <footer></footer>
-  
+  <footer>
+    <div class="footer-pagelinks">
+      <ul>
+        <li><a href="#">クラウダスの機能</a></li>
+        <li><a href="#">導入事例</a></li>
+        <li><a href="#">よくある質問</a></li>
+      </ul>
+    </div>
+    <a href="#" class="footer-rogo">
+      <img src="/img/cloudus-rogo.png" alt="CLOUDUSロゴ" >
+    </a>
+    <div class="corporate-info">
+      <ul>
+        <li><a href="#">運営会社</a></li> 
+        <li><a href="#">商標・特許・著作権について</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <div class="copylight">Copyright © 2023 E-teras inc. All Rights Reserved.</div>
+    </div>
+  </footer>
+  <script src="./js/humburgerMenu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script src="./js/slide-logo.js"></script>
   <script src="./js/scroll-up.js"></script>
+  <script src="./js/header-margin.js"></script>
 </body>
 </html>
